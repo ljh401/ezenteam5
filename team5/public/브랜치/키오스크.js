@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // 매장이용인지 포장주문인지 선택.
 let userInput = parseInt(prompt('1. 매장이용  2. 포장  번호로 입력해주세요.'));
 processUserChoice(userInput);
@@ -93,3 +94,17 @@ if (input1 === 1 || input1 === 2) {
   output1 = '유효하지 않은 입력입니다. 메인화면으로 돌아갑니다.';
   console.log(output1);
 }
+=======
+
+let 김밥 = 3000;
+let 돈까스 = 5500;
+let 라면 = 4000;
+let 김치찌개 = 6000;
+let 주먹밥 = 4000;
+let 떡볶이 = 5000;
+let 콩국수 = 4500;
+let 육개장 = 5500;
+let 김치볶음밥 = 5000;
+
+
+>>>>>>> branch '정용상' of https://github.com/ljh401/ezenteam5.git
