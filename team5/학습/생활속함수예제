@@ -17,7 +17,11 @@
 		}
 >>>>>>> branch '이진형' of https://github.com/ljh401/ezenteam5.git
 -팀원2 : 황태웅
-
+		function 이진형발작버튼(니여친김제형){ 
+		
+		return 이진형 주먹; 
+		}
+		
 -팀원3 : 차정훈
 신호등(  x (초록불=1,주황불=2,빨간불=3) )
 {if 초록불? 건넌다
