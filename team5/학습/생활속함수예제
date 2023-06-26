@@ -6,7 +6,7 @@
 		
 			if(황태웅 == 김승태 ) { 
 			
-			return 황태웅 주먹;
+			return 황태웅주먹;
 			}
 			else { console.log('말도 안됩니다') }
 		}
