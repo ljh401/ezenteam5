@@ -42,4 +42,6 @@
 			else{방류여부 = false}
 			return 방류여부
 	}
-	console.log(방류여부)
+	
+	댐(강수량)
+	console.log('방류여부 : ' + 방류여부)
