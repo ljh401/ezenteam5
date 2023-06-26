@@ -1,12 +1,7 @@
 -생활 속 함수 예시
 
 -팀원1 : 이진형
-<<<<<<< HEAD
-	function () {
-			
-	}
 
-=======
 		function 황태웅발작버튼(쌍욕){
 		
 			if(황태웅 == 김승태 ) { 
@@ -15,7 +10,7 @@
 			}
 			else { console.log('말도 안됩니다') }
 		}
->>>>>>> branch '이진형' of https://github.com/ljh401/ezenteam5.git
+
 -팀원2 : 황태웅
 		function 이진형발작버튼(니여친김제형){ 
 		
