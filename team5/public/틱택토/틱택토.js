@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-/**
- * 
- */
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -36,7 +22,7 @@ function clearBoard() {
 // 초기화 및 게임 시작
 resetGame();
 createButtons();
-=======
+
 let board1 = [ `` , `` , ``,
           	  `` , `` , ``,
            	  `` , `` , ``]
@@ -57,4 +43,4 @@ function ttButton(){
 	}
 	ttTable.innerHTML = ttHTML
 }
->>>>>>> branch '정용상' of https://github.com/ljh401/ezenteam5.git
+
