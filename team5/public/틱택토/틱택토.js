@@ -1,23 +1,4 @@
-
-// 초기화 함수
-function resetGame() {
-  board = ["", "", "", "", "", "", "", "", ""];
-  currentPlayer = "o";
-  clearBoard();
-}
-
-// 보드 초기화 함수
-function clearBoard() {
-  let buttons = document.getElementsByClassName(""); //  출력함수에서 button.classList.add("");기능에 해당하는 ""에 들어가는 값 
-  Array.from(buttons).forEach(button => {
-    button.textContent = "";
-  });
-}
-
-// 초기화 및 게임 시작
-resetGame();
-createButtons();
-
+// 출력 ---------------------------------------------------------------------------------
 let board = [ `` , `` , ``,
           	  `` , `` , ``,
            	  `` , `` , ``]
@@ -28,7 +9,7 @@ function ttButton(){
 	console.log('함수 시작')
 	let ttTable = document.querySelector('.ttTable')
 	let ttHTML = ``;
-	for(let i=1; i<=board1.length; i++){
+	for(let i=1; i<=board.length; i++){
 		ttHTML += `<td><button 
 		style="border:none; background-color: #ffe9d0;"
 		type="button">${i-1}</button></td>`
@@ -42,7 +23,7 @@ function ttButton(){
 
 //---------------------------------입력-------------------------------------------------
 
-//배열선언
+
 
 
 //처음 9개 버튼설정
@@ -56,20 +37,20 @@ for(let i=1; i<=9; i++){
 
 //클릭시 클릭값 등록
 function inputNumber(num){
-	board1.indexOf(num) != -1 ? alert('중복입니다.'):board1.push(num)
+	board.indexOf(num) != -1 ? alert('중복입니다.'):board.push(num)
 	
-	console.log(board1)
+	console.log(board)
 	
-	if(board1.length==6){
-		board1.splice(0)
+	if(board.length==6){
+		board.splice(0)
 		alert('초기화합니다.')
 	}
 }
 
 
-// 이진형
+// 승리-------------------------------------------------------------------------------
 
-
+function win() {
 
 for(let i = 0; i<=6; i+=3 ) {
 	
@@ -90,5 +71,24 @@ for(let i = 0; i<=2; i++ ) {
 	 else if (board.indexOf(``) === -1) { alert('무승부입니다')
 	 } else {alert('패배')}
 }
+}
 
+// 초기화 함수----------------------------------------------------------------------------------------------------------------
+function resetGame() {
+  board = ["", "", "", "", "", "", "", "", ""];
+  currentPlayer = "o";
+  clearBoard();
+}
+
+// 보드 초기화 함수
+function clearBoard() {
+  let buttons = document.getElementsByClassName(""); //  출력함수에서 button.classList.add("");기능에 해당하는 ""에 들어가는 값 
+  Array.from(buttons).forEach(button => {
+    button.textContent = "";
+  });
+}
+
+// 초기화 및 게임 시작
+resetGame();
+createButtons();
 
