@@ -1,1 +1,38 @@
 @charset "UTF-8";
+*{margin: 0; padding: 0; outline: none;
+font-size: 80px;
+color: #97a9ff;
+}
+
+#ttGame{
+	display: flex;
+	flex-direction: column;
+	width: 800px;
+	margin: 0 auto;
+	align-items: center;
+	margin-top: 100px;
+	
+}
+
+.ttTable{
+	width: 400px;
+	height: 400px;
+	text-align: center;
+	margin: 0 auto;
+	background-color: #ffe9d0;
+	border: solid 3px #97a9ff;
+	box-shadow: 0px 0px 10px 0px;
+	
+}
+.ttTable tr{
+	text-align: center;
+	
+}
+
+.ttTable td{
+	text-align: center;
+	border: solid 5px white;
+	width : 100px;
+	height : 100px;
+	
+}
