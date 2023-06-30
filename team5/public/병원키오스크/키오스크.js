@@ -37,6 +37,9 @@ let 진료과 = [
  //정용상 js 파트 시작
  
 function 등록(){
+	if(document.querySelector('input[name=sex]:checked') == undefined && 
+	document.querySelector('input[name=hopePart]:checked') == undefined)
+	{alert('정보를 모두 기입해 주세요.');return;}
 	let name = document.querySelector('.Clname').value
 	let securityNum = document.querySelector('.ClsecurityNum1').value
 	let sex = document.querySelector('input[name=sex]:checked').value
@@ -44,6 +47,12 @@ function 등록(){
 	let securityNumFull = 
 		document.querySelector('.ClsecurityNum1').value
 		+document.querySelector('.ClsecurityNum2').value
+	if(name=='' || securityNum == '' || securityNumFull == '')
+	{alert('정보를 모두 기입해 주세요.');return;}
+	if(document.querySelector('.ClsecurityNum1').value<7 ||
+		document.querySelector('.ClsecurityNum2').value<8){
+		alert('정보를 모두 기입해 주세요.');return;
+		}
 	if(환자정보.length != 0){for(i=0; i<=환자정보.length-1; i++){
 		if(환자정보[i].이름==name && 환자정보[i].주민번호==securityNumFull){
 			alert('같은 환자가 이미 등록되어 있습니다.');return;
