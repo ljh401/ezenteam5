@@ -1,6 +1,6 @@
  
 /* 이름 = 변수명 let name , HTML class명 Clname
-<<<<<<< HEAD
+
  생년월일 = 변수명 let securityNum	ClsecurityNum1
  주민번호 = 변수명 let securityNumFull HTML class명 ClsecurityNum1 + ClsecurityNum2
  성별 = 변수명 let sex , HTML class명 Clsex
@@ -37,7 +37,7 @@ let 진료과 = [
  //정용상 js 파트 시작
  
 function 등록(){
-	if(document.querySelector('input[name=sex]:checked') == undefined && 
+	if(document.querySelector('input[name=sex]:checked') == undefined || 
 	document.querySelector('input[name=hopePart]:checked') == undefined)
 	{alert('정보를 모두 기입해 주세요.');return;}
 	let name = document.querySelector('.Clname').value
@@ -49,8 +49,8 @@ function 등록(){
 		+document.querySelector('.ClsecurityNum2').value
 	if(name=='' || securityNum == '' || securityNumFull == '')
 	{alert('정보를 모두 기입해 주세요.');return;}
-	if(document.querySelector('.ClsecurityNum1').value<7 ||
-		document.querySelector('.ClsecurityNum2').value<8){
+	if(document.querySelector('.ClsecurityNum1').value.length<7 ||
+		document.querySelector('.ClsecurityNum2').value.length<8){
 		alert('정보를 모두 기입해 주세요.');return;
 		}
 	if(환자정보.length != 0){for(i=0; i<=환자정보.length-1; i++){
