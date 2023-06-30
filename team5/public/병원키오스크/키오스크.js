@@ -34,6 +34,7 @@ let 진료과 = [
   { 약: ['임창정', '노인정', '김세정'], 진료비: '15000원' }
 ];
 
+
  //정용상 js 파트 시작
  
 function 등록(){
@@ -104,7 +105,9 @@ function 출력() {
 
 // 환자 정보 출력
 출력();
-
+수납출력();
+let 알약 = '';
+let 진료비 = '';
 
 
   
@@ -124,35 +127,45 @@ function 출력() {
       <th>성별</th>
       <th>주민번호</th>
       <th>진료과</th>
+      <th>제조약</th>
     </tr>
   `;
 
-  for (let i = 0; i < 수납환자.length; i++) {
-    let 환자 = 수납환자[i];
+  for (let i = 0; i < 수납환자.length; i++)
+   {
+    if (수납환자[i].희망진료과 == '내과') {
+  	알약 = 진료과[0].약.join(', ');
+  	진료비 = 진료과[0].진료비;
+	} else if (수납환자[i].희망진료과 == '외과') {
+  	알약 = 진료과[1].약.join(', ');
+  	진료비 = 진료과[1].진료비;
+	} else if (수납환자[i].희망진료과 == '정형외과') {
+  	알약 = 진료과[2].약.join(', ');
+  	진료비 = 진료과[2].진료비;
+	}
+
 
     html += `
       <tr>
-        <td>${환자.이름}</td>
-        <td>${환자.성별}</td>
-        <td>${환자.주민번호}</td>
-        <td>${환자.희망진료과}</td>
+        <td>${수납환자[i].이름}</td>
+        <td>${수납환자[i].성별}</td>
+        <td>${수납환자[i].주민번호}</td>
+        <td>${수납환자[i].희망진료과}</td>
+        <td>${알약}</td>
+        
       </tr>
     `;
+    html += 
+    `<h3> 납부하실 금액</h3>` +
+    `<p> 납부하실 금액은 ${진료비} 입니다. </p>`
   }
+  
+	
+  	topTable.innerHTML = html;
 
-  topTable.innerHTML = html;
-
-  let bottomTable = document.querySelector('#bottomTable');
-
-  let html1 = `
-    <tr>
-      <th>제조약</th>
-      <th>1.</th>
-    </tr>
-  `;
+	
 
 }
-
  
   /*  if(환자정보[index].희망진료과 == '내과'){ html += 진료과[0].약
                              html += 진료과[0].진료비
@@ -164,22 +177,19 @@ function 출력() {
                              html += 진료과[2].진료비
                              return;}  
    
-
   
 */
 
 // 수납 함수 
-function pay(index){
-	let inputPay=document.querySelector('.수납금액');
-	let Html=inputPay
+function pay(){
+	let inputPay=document.querySelector('#수납금액');
+	let Html= '';
 	//인덱스
-	Html=`<tr>
-					<td>내과</td><td>휴대폰약정</td><td>13,000원</td>
-				</tr>`
-	Html+=`<tr>
+	
+/*	Html+=`<tr>
 					<td>${수납환자[index]}</td><td>${수납환자[index]}</td><td>${수납환자[index]}</td>
 					
-				</tr>`
+				</tr>`*/
 				
 	inputPay.innerHTML = Html;	
 			
