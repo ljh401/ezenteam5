@@ -28,10 +28,10 @@ function ttButton(){
 
 //처음 9개 버튼설정
 for(let i=1; i<=9; i++){
-	document.querySelector('#inputBox').innerHTML +=
+	document.querySelector('#ttGame').innerHTML +=
 	`<button class = "input" onclick="inputNumber(${i})"></button>`
 	if(i%3==0){
-		document.querySelector('#inputBox').innerHTML += '<br/>'
+		document.querySelector('#ttGame').innerHTML += '<br/>'
 	}
 }
 
@@ -89,6 +89,6 @@ function clearBoard() {
 }
 
 // 초기화 및 게임 시작
-resetGame();
+/*   resetGame();
 createButtons();
-
+*/
