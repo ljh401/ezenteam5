@@ -34,5 +34,30 @@
  let 수납환자 =[]; 
  // 0번 내과 , 1번 외과 , 2번 정형외과
  let 진료과 = [ { 약 : [ '휴대폰약정','초코파이정' ,'코카인'] , 진료비: '13000원' }  , { 약 : [ '걱정','코요태순정' ,'닭강정'] , 진료비: '14000원' } , { 약 : [ '임창정','노인정' ,'김세정'] , 진료비: '15000원' }]
+ 수납출력();
+ function 수납출력() {
+	 let topTable = document.querySelector('#topTable'); 	console.log(topTable)
+	 
+	let html = `<tr>
+	 				<th> 이름 </th>
+	 				<th>성별</th> 
+	 				<th>주민번호 </th>
+	 				<th>진료과</th> 
+	 			</tr>`;
+	
+		for( let i = 0 ; i<수납환자.length ; i++ ){
+			
+			let 수납환자 = 수납환자[i];
+			 
+			html += `<tr>
+						<td> ${ 수납환자[i].name } </td> 
+						<td> ${ 수납환자[i].sex } </td> 
+						<td> ${ 수납환자[i].securityNum } </td> 
+						<td> ${ 수납환자[i].진료과 } </td>
+					</tr>`
+		} 
+
+	topTable.innerHTML = html ;
+ }
  
   
