@@ -1,1 +1,17 @@
 @charset "UTF-8";
+
+
+.정용상{
+	display : flex;
+	flex-direction: column;
+}
+
+.정용상 button{
+	width: 100px;
+}
+
+.ClsecurityNum1, .ClsecurityNum2
+,.Clname{
+	width : 100px;
+	
+}

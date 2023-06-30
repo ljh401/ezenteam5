@@ -1,6 +1,7 @@
  
 /* 이름 = 변수명 let name , HTML class명 Clname
- 주민번호 = 변수명 let securityNum HTML class명 ClsecurityNum
+ 생년월일 = 변수명 let securityNum	ClsecurityNum1
+ 주민번호 = 변수명 let securityNumFull HTML class명 ClsecurityNum1 + ClsecurityNum2
  성별 = 변수명 let sex , HTML class명 Clsex
  희망진료과 = 변수명 let hopePart , HTML class명 ClhopePart
  환자정보 = {};
@@ -26,3 +27,36 @@
  let 진료과 = [ { 약 : [ '휴대폰약정','초코파이정' ,'코카인'] , 진료비: '13000원' }  , { 약 : [ '걱정','코요태순정' ,'닭강정'] , 진료비: '14000원' } , { 약 : [ '임창정','노인정' ,'김세정'] , 진료비: '15000원' }]
  
   
+ //정용상 js 파트 시작
+ 
+function 등록(){
+	let name = document.querySelector('.Clname').value
+	let securityNum = document.querySelector('.ClsecurityNum1').value
+	let sex = document.querySelector('input[name=sex]:checked').value
+	let hopePart = document.querySelector('input[name=hopePart]:checked').value
+	let securityNumFull = 
+		document.querySelector('.ClsecurityNum1').value
+		+document.querySelector('.ClsecurityNum2').value
+	if(환자정보.length != 0){for(i=0; i<=환자정보.length-1; i++){
+		if(환자정보[i].이름==name && 환자정보[i].주민번호==securityNumFull){
+			alert('같은 환자가 이미 등록되어 있습니다.');return;
+			}
+		}
+	}
+ 	let patientInfo = {이름 : name,
+ 						생년월일 : securityNum,
+ 						성별 : sex,
+ 						희망진료과 : hopePart,
+ 						주민번호 : securityNumFull
+ 						}
+ 	환자정보.push(patientInfo)
+ 	alert('접수가 완료되었습니다.')
+ 	document.querySelector('.Clname').value = '';
+ 	document.querySelector('.ClsecurityNum1').value = '';
+ 	document.querySelector('.ClsecurityNum2').value = '';
+ 	document.querySelector('input[name=sex]:checked').checked = false;
+ 	document.querySelector('input[name=hopePart]:checked').checked = false;
+ 	
+}
+ 
+ //정용상 js 파트 종료
