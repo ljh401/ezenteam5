@@ -1,1 +1,36 @@
 @charset "UTF-8";
+/* 테이블 스타일 */
+#outputTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align:center;
+}
+
+#outputTable th {
+  background-color: #f2f2f2;
+  padding: 8px;
+}
+
+#outputTable td {
+  padding: 8px;
+}
+
+#outputTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* 버튼 스타일 */
+button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.황태웅title {
+  text-align: center;
+}
