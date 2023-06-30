@@ -124,18 +124,22 @@ function 출력() {
       <th>성별</th>
       <th>주민번호</th>
       <th>진료과</th>
+      <th>제조약</th>
     </tr>
   `;
 
   for (let i = 0; i < 수납환자.length; i++) {
     let 환자 = 수납환자[i];
-
+    console.log(환자)
+    console.log(환자.희망진료)
+ 
     html += `
       <tr>
         <td>${환자.이름}</td>
         <td>${환자.성별}</td>
         <td>${환자.주민번호}</td>
         <td>${환자.희망진료과}</td>
+        <td>${환자.약}</td>
       </tr>
     `;
   }
