@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="키오스크.css" rel="stylesheet">
+</head>
+<body>
+
+	<div>
+		<div class="정용상"></div>
+		<div class="황태웅"></div>
+		<!-- 상단 처방전 -->
+		<div id="수납">
+			<div>처방전</div>
+			<div>주민번호:123456-1******</div>
+			<div>진료과:내과</div>
+			<div>제조약</div>
+			<div>감기약<br/>
+					위장약<br/>
+					강약<br/>
+			</div>
+		</div>		<!-- 상단 처방전 end  -->
+		<div>
+			<h3>납부하실 금액<h3>
+			<table border="1" id="수납금액">
+				<tr>
+					<th>진료과</th><th>약이름</th><th>금액</th>
+				</tr>
+				<tr>
+					<td>내과</td><td>휴대폰약정</td><td>13,000원</td>
+				</tr>
+				<tr>
+					<td><button onclick="pay()">수납</button></td>
+				</tr>				
+			</table>
+		
+		</div>
+	</div>
+
+	<script src="키오스크.js" type="text/javascript"></script>
+
+
+
+</body>
+</html>

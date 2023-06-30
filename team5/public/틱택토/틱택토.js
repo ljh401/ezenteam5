@@ -11,8 +11,9 @@ function ttButton(){
 	let ttHTML = ``;
 	for(let i=1; i<=board.length; i++){
 		ttHTML += `<td><button 
-		style="border:none; background-color: #ffe9d0;"
-		type="button">${i-1}</button></td>`
+		style="border:none; background-color: #ffe9d0;
+		width:100px; height:100px;"
+		type="button" onclick="inputNumber(${i})" ></button></td>`
 				
 		if(i%3==0){ ttHTML += `</tr>`}
 		
@@ -26,34 +27,68 @@ function ttButton(){
 
 
 
-//처음 9개 버튼설정
-for(let i=1; i<=9; i++){
-	document.querySelector('#ttGame').innerHTML +=
-	`<button class = "input" onclick="inputNumber(${i})"></button>`
-	if(i%3==0){
-		document.querySelector('#ttGame').innerHTML += '<br/>'
-	}
-}
 
 //클릭시 클릭값 등록
 function inputNumber(num){
-	board.indexOf(num) != -1 ? alert('중복입니다.'):board.push(num)
+	board.indexOf(num) != -1 ? alert('중복입니다.'):
 	
-	console.log(board)
+	board.splice(num-1,1,'O')
+	
+	/*win()*/
+	
+	board.indexOf(num) != -1 ? alert('중복입니다.'):
+	board.splice(parseInt(Math.random()*10),1,'X')
+	
+	/*win()*/
 	
 	if(board.length==6){
 		board.splice(0)
 		alert('초기화합니다.')
+		
 	}
+	ttButton()
+	console.log(board)
 }
 
 
 // 승리-------------------------------------------------------------------------------
+/*
+function win(wnum) {
 
-function win() {
 
-for(let i = 0; i<=6; i+=3 ) {
+if(board[0]==wnum){
+	if(board[1]==wnum && board[2]==wnum)
+		{if(wnum=='x'){alert('컴퓨터가 승리입니다.');return;}
+		if(wnum=='o'){alert('당신이 승리했습니다.');return;}}
+	if(board[3]==wnum && board[6]==wnum){alert('승리입니다.')}
+	if(board[4]==wnum && board[8]==wnum){alert('승리입니다.')}
 	
+}
+
+if(board[1]==wnum){
+	if(board[4]==wnum && board[7]==wnum){alert('승리입니다.')}
+	
+}
+
+if(board[2]==wnum){
+	if(board[5]==wnum && board[8]==wnum){alert('승리입니다.')}
+	if(board[4]==wnum && board[6]==wnum){alert('승리입니다.')}
+	
+}
+
+if(board[3]==wnum){
+	if(board[4]==wnum && board[5]==wnum){alert('승리입니다.')}
+	
+}
+
+if(board[6]==wnum){
+	if(board[7]==wnum && board[8]==wnum){alert('승리입니다.')}
+	
+}
+*/
+
+/*function winFpn(){
+for(let i = 0; i<=6; i+=3 ) {
 
 	if(i==i+1 && i+1 == i+2) {
 	alert(' 플레이어 승리입니다.')
@@ -72,6 +107,7 @@ for(let i = 0; i<=2; i++ ) {
 	 } else {alert('패배')}
 }
 }
+*/
 
 // 초기화 함수----------------------------------------------------------------------------------------------------------------
 function resetGame() {
@@ -87,8 +123,8 @@ function clearBoard() {
     button.textContent = "";
   });
 }
-
+/*
 // 초기화 및 게임 시작
-/*   resetGame();
-createButtons();
-*/
+resetGame();
+createButtons();*/
+
