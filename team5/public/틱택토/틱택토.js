@@ -26,9 +26,6 @@ function ttButton(){
 
 
 
-
-<<<<<<< HEAD
-=======
 //처음 9개 버튼설정
 for(let i=1; i<=9; i++){
 	document.querySelector('#ttGame').innerHTML +=
@@ -37,7 +34,7 @@ for(let i=1; i<=9; i++){
 		document.querySelector('#ttGame').innerHTML += '<br/>'
 	}
 }
->>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5.git
+
 
 //클릭시 클릭값 등록
 function inputNumber(num){
@@ -140,8 +137,4 @@ function clearBoard() {
 resetGame();
 createButtons();*/
 
-=======
-/*   resetGame();
-createButtons();
-*/
->>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5.git
+
