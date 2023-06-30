@@ -1,6 +1,5 @@
 
 /* 이름 = 변수명 let name , HTML class명 Clname
-<<<<<<< HEAD
  생년월일 = 변수명 let securityNum	ClsecurityNum1
  주민번호 = 변수명 let securityNumFull HTML class명 ClsecurityNum1 + ClsecurityNum2
  성별 = 변수명 let sex , HTML class명 Clsex
@@ -133,34 +132,22 @@ function 수납출력() {
     </tr>
   `;
 
-	HEAD
 	for (let i = 0; i < 수납환자.length; i++) {
-		let 환자 = 수납환자[i];
-		console.log(환자)
-		console.log(환자.희망진료)
-
-		for (let i = 0; i < 수납환자.length; i++) {
-			if (수납환자[i].희망진료과 == '내과') {
-				알약 = 진료과[0].약.join(', ');
-				진료비 = 진료과[0].진료비;
-			} else if (수납환자[i].희망진료과 == '외과') {
-				알약 = 진료과[1].약.join(', ');
-				진료비 = 진료과[1].진료비;
-			} else if (수납환자[i].희망진료과 == '정형외과') {
-				알약 = 진료과[2].약.join(', ');
-				진료비 = 진료과[2].진료비;
-			}
+		if (수납환자[i].희망진료과 == '내과') {
+			알약 = 진료과[0].약.join(', ');
+			진료비 = 진료과[0].진료비;
+		} else if (수납환자[i].희망진료과 == '외과') {
+			알약 = 진료과[1].약.join(', ');
+			진료비 = 진료과[1].진료비;
+		} else if (수납환자[i].희망진료과 == '정형외과') {
+			알약 = 진료과[2].약.join(', ');
+			진료비 = 진료과[2].진료비;
+		}
 
 
 
-			html += `
+		html += `
       <tr>
-
-        <td>${환자.이름}</td>
-        <td>${환자.성별}</td>
-        <td>${환자.주민번호}</td>
-        <td>${환자.희망진료과}</td>
-        <td>${환자.약}</td>
 
         <td>${수납환자[i].이름}</td>
         <td>${수납환자[i].성별}</td>
@@ -171,55 +158,51 @@ function 수납출력() {
 
       </tr>
     `;
-			html +=
-				`<h3> 납부하실 금액</h3>` +
-				`<p> 납부하실 금액은 ${진료비} 입니다. </p>`
-		}
+    html += 
+    `<h3> ${수납환자[i].이름}님 납부하실 금액</h3>` +
+    `<p> 납부하실 금액은 ${진료비} 입니다. </p>`
+  }
+  
+	
+  	topTable.innerHTML = html;
 
 
-		topTable.innerHTML = html;
 
-
-
-	}
 }
-	/*  if(환자정보[index].희망진료과 == '내과'){ html += 진료과[0].약
-							   html += 진료과[0].진료비
-							   return;}
-	 if(환자정보[index].희망진료과 == '외과'){ html += 진료과[1].약
-							   html += 진료과[1].진료비
-							   return;}
-	 if(환자정보[index].희망진료과 == '정형'){ html += 진료과[2].약
-							   html += 진료과[2].진료비
-							   return;}  
-	 
-    
-  */
 
-	// 수납 함수 
-	function pay() {
-		let input = Number(prompt('ic카드를 넣어주세요'))
-		for (let i = 0; i < 수납환자.length; i++) {
-			if (수납환자[i].희망진료과 == '내과') {
-				알약 = 진료과[0].약.join(', ');
-				진료비 = 진료과[0].진료비;
-			}
-			else if (수납환자[i].희망진료과 == '외과') {
-				알약 = 진료과[1].약.join(', ');
-				진료비 = 진료과[1].진료비;
-			}
-			else if (수납환자[i].희망진료과 == '정형외과') {
-				알약 = 진료과[2].약.join(', ');
-				진료비 = 진료과[2].진료비;
-			}
+/*  if(환자정보[index].희망진료과 == '내과'){ html += 진료과[0].약
+						   html += 진료과[0].진료비
+						   return;}
+ if(환자정보[index].희망진료과 == '외과'){ html += 진료과[1].약
+						   html += 진료과[1].진료비
+						   return;}
+ if(환자정보[index].희망진료과 == '정형'){ html += 진료과[2].약
+						   html += 진료과[2].진료비
+						   return;}  
+ 
+ 
+*/
+
+// 수납 함수 
+function pay() {
+	let input = Number(prompt('ic카드를 넣어주세요'))
+	for (let i = 0; i < 수납환자.length; i++) {
+		if (수납환자[i].희망진료과 == '내과') {
+			진료비 = 진료과[0].진료비;
+		}	
+		else if (수납환자[i].희망진료과 == '외과') {
+			
+			진료비 = 진료과[1].진료비;
 		}
+		else if (수납환자[i].희망진료과 == '정형외과') {
+		
+			진료비 = 진료과[2].진료비;
+		}
+	}
 
 
-		if (input == 알약[0]) {
-			alert('결제가 완료되었습니다.')
-
-		} else { alert('잔액부족.') }
-
-
-
-			}	
+	if (input == 진료비) {
+		alert('결제가 완료되었습니다.')
+			console.log(진료비)
+	} 
+}	
