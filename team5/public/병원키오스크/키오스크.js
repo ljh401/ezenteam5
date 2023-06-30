@@ -36,28 +36,52 @@
  let 진료과 = [ { 약 : [ '휴대폰약정','초코파이정' ,'코카인'] , 진료비: '13000원' }  , { 약 : [ '걱정','코요태순정' ,'닭강정'] , 진료비: '14000원' } , { 약 : [ '임창정','노인정' ,'김세정'] , 진료비: '15000원' }]
  수납출력();
  function 수납출력() {
-	 let topTable = document.querySelector('#topTable'); 	console.log(topTable)
-	 
-	let html = `<tr>
-	 				<th> 이름 </th>
-	 				<th>성별</th> 
-	 				<th>주민번호 </th>
-	 				<th>진료과</th> 
-	 			</tr>`;
-	
-		for( let i = 0 ; i<수납환자.length ; i++ ){
-			
-			let 수납환자 = 수납환자[i];
-			 
-			html += `<tr>
-						<td> ${ 수납환자[i].name } </td> 
-						<td> ${ 수납환자[i].sex } </td> 
-						<td> ${ 수납환자[i].securityNum } </td> 
-						<td> ${ 수납환자[i].진료과 } </td>
-					</tr>`
-		} 
+  let topTable = document.querySelector('#topTable');
+  console.log(topTable);
 
-	topTable.innerHTML = html ;
- }
- 
-  
+  let html = `
+    <tr>
+      <th>이름</th>
+      <th>성별</th>
+      <th>주민번호</th>
+      <th>진료과</th>
+    </tr>
+  `;
+
+  for (let i = 0; i < 수납환자.length; i++) {
+    let 환자 = 수납환자[i];
+
+    html += `
+      <tr>
+        <td>${환자.name}</td>
+        <td>${환자.sex}</td>
+        <td>${환자.securityNum}</td>
+        <td>${환자.진료과}</td>
+      </tr>
+    `;
+  }
+
+  topTable.innerHTML = html;
+
+  let bottomTable = document.querySelector('#bottomTable');
+  console.log(bottomTable);
+
+  let html1 = `
+    <tr>
+      <th>제조약</th>
+      <th>1.</th>
+    </tr>
+  `;
+
+  for (let j = 0; j < 진료과.length; j++) {
+    let 특정진료과 = 진료과[j];
+
+    html1 += `
+      <tr>
+        <td>${특정진료과.약}</td>
+      </tr>
+    `;
+  }
+
+  bottomTable.innerHTML = html1;
+}
