@@ -33,43 +33,6 @@ let 진료과 = [
   { 약: ['임창정', '노인정', '김세정'], 진료비: '15000원' }
 ];
 
-// 진료완료 버튼을 클릭할 때 호출되는 함수
-function 진료완료(index) {
-  // 해당 인덱스의 환자 정보를 수납환자 배열에 push
-  수납환자.push(환자정보[index]);
-
-  // 해당 인덱스의 환자 정보를 환자정보 배열에서 삭제
-  환자정보.splice(index, 1);
-
-  // 환자 정보를 다시 출력
-  출력();
-}
-
-// 환자 정보를 출력하는 함수
-function 출력() {
-  let html = `<tr> <th> 이름 </th> <th> 생년월일 </th> <th> 진료과 </th> <th> 비고 </th> </tr>`;
-
-  for (let i = 0; i < 환자정보.length; i++) {
-    html += `<tr>
-                <td>${환자정보[i].이름}</td>
-                <td>${환자정보[i].생년월일}</td>
-                <td>${환자정보[i].희망과}</td>
-                <td><button onclick="진료완료(${i})">진료완료</button></td>
-             </tr>`;
-  }
-
-  // table에 HTML 넣어주기
-  const outputTable = document.getElementById('outputTable');
-  outputTable.innerHTML = html;
-}
-
-// 환자 정보 출력
-출력();
-console.log(수납환자);
-
-
-
-  
  //정용상 js 파트 시작
  
 function 등록(){
@@ -100,15 +63,58 @@ function 등록(){
  	document.querySelector('input[name=sex]:checked').checked = false;
  	document.querySelector('input[name=hopePart]:checked').checked = false;
  	
+ 	 출력();
 }
- 
+
  //정용상 js 파트 종료
+ 
+// 진료완료 버튼을 클릭할 때 호출되는 함수
+function 진료완료(index) {
+  // 해당 인덱스의 환자 정보를 수납환자 배열에 push
+  수납환자.push(환자정보[index]);
+
+  // 해당 인덱스의 환자 정보를 환자정보 배열에서 삭제
+  환자정보.splice(index, 1);
+
+  // 환자 정보를 다시 출력
+  출력();
+  수납출력();
+}
+
+// 환자 정보를 출력하는 함수
+function 출력() {
+  let html = `<tr> <th> 이름 </th> <th> 생년월일 </th> <th> 진료과 </th> <th> 비고 </th> </tr>`;
+
+  for (let i = 0; i < 환자정보.length; i++) {
+    html += `<tr>
+                <td>${환자정보[i].이름}</td>
+                <td>${환자정보[i].생년월일}</td>
+                <td>${환자정보[i].희망진료과}</td>
+                <td><button onclick="진료완료(${i})">진료완료</button></td>
+             </tr>`;
+  }
+
+  // table에 HTML 넣어주기
+  const outputTable = document.getElementById('outputTable');
+  outputTable.innerHTML = html;
+  
+}
+
+// 환자 정보 출력
+출력();
 
 
- 수납출력();
+
+  
+
+
+
+
  function 수납출력() {
   let topTable = document.querySelector('#topTable');
-  console.log(topTable);
+  
+  
+  
 
   let html = `
     <tr>
@@ -124,10 +130,10 @@ function 등록(){
 
     html += `
       <tr>
-        <td>${환자.name}</td>
-        <td>${환자.sex}</td>
-        <td>${환자.securityNum}</td>
-        <td>${환자.진료과}</td>
+        <td>${환자.이름}</td>
+        <td>${환자.성별}</td>
+        <td>${환자.주민번호}</td>
+        <td>${환자.희망진료과}</td>
       </tr>
     `;
   }
@@ -135,7 +141,6 @@ function 등록(){
   topTable.innerHTML = html;
 
   let bottomTable = document.querySelector('#bottomTable');
-  console.log(bottomTable);
 
   let html1 = `
     <tr>
@@ -144,16 +149,4 @@ function 등록(){
     </tr>
   `;
 
-  for (let j = 0; j < 진료과.length; j++) {
-    let 특정진료과 = 진료과[j];
-
-    html1 += `
-      <tr>
-        <td>${특정진료과.약}</td>
-      </tr>
-    `;
-  }
-
-  bottomTable.innerHTML = html1;
 }
-
