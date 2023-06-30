@@ -1,4 +1,4 @@
- 
+
 /* 이름 = 변수명 let name , HTML class명 Clname
 <<<<<<< HEAD
  생년월일 = 변수명 let securityNum	ClsecurityNum1
@@ -29,96 +29,101 @@
 let 환자정보 = [];
 let 수납환자 = [];
 let 진료과 = [
-  { 약: ['휴대폰약정', '초코파이정', '코카인'], 진료비: '13000원' },
-  { 약: ['걱정', '코요태순정', '닭강정'], 진료비: '14000원' },
-  { 약: ['임창정', '노인정', '김세정'], 진료비: '15000원' }
+	{ 약: ['휴대폰약정', '초코파이정', '코카인'], 진료비: '13000원' },
+	{ 약: ['걱정', '코요태순정', '닭강정'], 진료비: '14000원' },
+	{ 약: ['임창정', '노인정', '김세정'], 진료비: '15000원' }
 ];
 
- //정용상 js 파트 시작
- 
-function 등록(){
+
+//정용상 js 파트 시작
+
+function 등록() {
 	let name = document.querySelector('.Clname').value
 	let securityNum = document.querySelector('.ClsecurityNum1').value
 	let sex = document.querySelector('input[name=sex]:checked').value
 	let hopePart = document.querySelector('input[name=hopePart]:checked').value
-	let securityNumFull = 
+	let securityNumFull =
 		document.querySelector('.ClsecurityNum1').value
-		+document.querySelector('.ClsecurityNum2').value
-	if(환자정보.length != 0){for(i=0; i<=환자정보.length-1; i++){
-		if(환자정보[i].이름==name && 환자정보[i].주민번호==securityNumFull){
-			alert('같은 환자가 이미 등록되어 있습니다.');return;
+		+ document.querySelector('.ClsecurityNum2').value
+	if (환자정보.length != 0) {
+		for (i = 0; i <= 환자정보.length - 1; i++) {
+			if (환자정보[i].이름 == name && 환자정보[i].주민번호 == securityNumFull) {
+				alert('같은 환자가 이미 등록되어 있습니다.'); return;
 			}
 		}
 	}
- 	let patientInfo = {이름 : name,
- 						생년월일 : securityNum,
- 						성별 : sex,
- 						희망진료과 : hopePart,
- 						주민번호 : securityNumFull
- 						}
- 	환자정보.push(patientInfo)
- 	alert('접수가 완료되었습니다.')
- 	document.querySelector('.Clname').value = '';
- 	document.querySelector('.ClsecurityNum1').value = '';
- 	document.querySelector('.ClsecurityNum2').value = '';
- 	document.querySelector('input[name=sex]:checked').checked = false;
- 	document.querySelector('input[name=hopePart]:checked').checked = false;
- 	
- 	 출력();
+	let patientInfo = {
+		이름: name,
+		생년월일: securityNum,
+		성별: sex,
+		희망진료과: hopePart,
+		주민번호: securityNumFull
+	}
+	환자정보.push(patientInfo)
+	alert('접수가 완료되었습니다.')
+	document.querySelector('.Clname').value = '';
+	document.querySelector('.ClsecurityNum1').value = '';
+	document.querySelector('.ClsecurityNum2').value = '';
+	document.querySelector('input[name=sex]:checked').checked = false;
+	document.querySelector('input[name=hopePart]:checked').checked = false;
+
+	출력();
 }
 
- //정용상 js 파트 종료
- 
+//정용상 js 파트 종료
+
 // 진료완료 버튼을 클릭할 때 호출되는 함수
 function 진료완료(index) {
-  // 해당 인덱스의 환자 정보를 수납환자 배열에 push
-  수납환자.push(환자정보[index]);
+	// 해당 인덱스의 환자 정보를 수납환자 배열에 push
+	수납환자.push(환자정보[index]);
 
-  // 해당 인덱스의 환자 정보를 환자정보 배열에서 삭제
-  환자정보.splice(index, 1);
+	// 해당 인덱스의 환자 정보를 환자정보 배열에서 삭제
+	환자정보.splice(index, 1);
 
-  // 환자 정보를 다시 출력
-  출력();
-  수납출력();
+	// 환자 정보를 다시 출력
+	출력();
+	수납출력();
 
 }
 
 // 환자 정보를 출력하는 함수
 function 출력() {
-  let html = `<tr> <th> 이름 </th> <th> 생년월일 </th> <th> 진료과 </th> <th> 비고 </th> </tr>`;
+	let html = `<tr> <th> 이름 </th> <th> 생년월일 </th> <th> 진료과 </th> <th> 비고 </th> </tr>`;
 
-  for (let i = 0; i < 환자정보.length; i++) {
-    html += `<tr>
+	for (let i = 0; i < 환자정보.length; i++) {
+		html += `<tr>
                 <td>${환자정보[i].이름}</td>
                 <td>${환자정보[i].생년월일}</td>
                 <td>${환자정보[i].희망진료과}</td>
                 <td><button onclick="진료완료(${i})">진료완료</button></td>
              </tr>`;
-  }
+	}
 
-  // table에 HTML 넣어주기
-  const outputTable = document.getElementById('outputTable');
-  outputTable.innerHTML = html;
-  
+	// table에 HTML 넣어주기
+	const outputTable = document.getElementById('outputTable');
+	outputTable.innerHTML = html;
+
 }
 
 // 환자 정보 출력
 출력();
+수납출력();
+let 알약 = '';
+let 진료비 = '';
 
 
 
-  
 
 
 
 
- function 수납출력() {
-  let topTable = document.querySelector('#topTable');
-  
-  
-  
+function 수납출력() {
+	let topTable = document.querySelector('#topTable');
 
-  let html = `
+
+
+
+	let html = `
     <tr>
       <th>이름</th>
       <th>성별</th>
@@ -128,69 +133,93 @@ function 출력() {
     </tr>
   `;
 
-  for (let i = 0; i < 수납환자.length; i++) {
-    let 환자 = 수납환자[i];
-    console.log(환자)
-    console.log(환자.희망진료)
- 
-    html += `
+	HEAD
+	for (let i = 0; i < 수납환자.length; i++) {
+		let 환자 = 수납환자[i];
+		console.log(환자)
+		console.log(환자.희망진료)
+
+		for (let i = 0; i < 수납환자.length; i++) {
+			if (수납환자[i].희망진료과 == '내과') {
+				알약 = 진료과[0].약.join(', ');
+				진료비 = 진료과[0].진료비;
+			} else if (수납환자[i].희망진료과 == '외과') {
+				알약 = 진료과[1].약.join(', ');
+				진료비 = 진료과[1].진료비;
+			} else if (수납환자[i].희망진료과 == '정형외과') {
+				알약 = 진료과[2].약.join(', ');
+				진료비 = 진료과[2].진료비;
+			}
+
+
+
+			html += `
       <tr>
+
         <td>${환자.이름}</td>
         <td>${환자.성별}</td>
         <td>${환자.주민번호}</td>
         <td>${환자.희망진료과}</td>
         <td>${환자.약}</td>
+
+        <td>${수납환자[i].이름}</td>
+        <td>${수납환자[i].성별}</td>
+        <td>${수납환자[i].주민번호}</td>
+        <td>${수납환자[i].희망진료과}</td>
+        <td>${알약}</td>
+        
+
       </tr>
     `;
-  }
+			html +=
+				`<h3> 납부하실 금액</h3>` +
+				`<p> 납부하실 금액은 ${진료비} 입니다. </p>`
+		}
 
-  topTable.innerHTML = html;
 
-  let bottomTable = document.querySelector('#bottomTable');
+		topTable.innerHTML = html;
 
-  let html1 = `
-    <tr>
-      <th>제조약</th>
-      <th>1.</th>
-    </tr>
-  `;
 
+
+	}
 }
+	/*  if(환자정보[index].희망진료과 == '내과'){ html += 진료과[0].약
+							   html += 진료과[0].진료비
+							   return;}
+	 if(환자정보[index].희망진료과 == '외과'){ html += 진료과[1].약
+							   html += 진료과[1].진료비
+							   return;}
+	 if(환자정보[index].희망진료과 == '정형'){ html += 진료과[2].약
+							   html += 진료과[2].진료비
+							   return;}  
+	 
+    
+  */
 
- 
-  /*  if(환자정보[index].희망진료과 == '내과'){ html += 진료과[0].약
-                             html += 진료과[0].진료비
-                             return;}
-   if(환자정보[index].희망진료과 == '외과'){ html += 진료과[1].약
-                             html += 진료과[1].진료비
-                             return;}
-   if(환자정보[index].희망진료과 == '정형'){ html += 진료과[2].약
-                             html += 진료과[2].진료비
-                             return;}  
-   
+	// 수납 함수 
+	function pay() {
+		let input = Number(prompt('ic카드를 넣어주세요'))
+		for (let i = 0; i < 수납환자.length; i++) {
+			if (수납환자[i].희망진료과 == '내과') {
+				알약 = 진료과[0].약.join(', ');
+				진료비 = 진료과[0].진료비;
+			}
+			else if (수납환자[i].희망진료과 == '외과') {
+				알약 = 진료과[1].약.join(', ');
+				진료비 = 진료과[1].진료비;
+			}
+			else if (수납환자[i].희망진료과 == '정형외과') {
+				알약 = 진료과[2].약.join(', ');
+				진료비 = 진료과[2].진료비;
+			}
+		}
 
-  
-*/
 
-// 수납 함수 
-function pay(index){
-	let inputPay=document.querySelector('.수납금액');
-	let Html=inputPay
-	//인덱스
-	Html=`<tr>
-					<td>내과</td><td>휴대폰약정</td><td>13,000원</td>
-				</tr>`
-	Html+=`<tr>
-					<td>${수납환자[index]}</td><td>${수납환자[index]}</td><td>${수납환자[index]}</td>
-					
-				</tr>`
-				
-	inputPay.innerHTML = Html;	
-			
-	let input=Number(prompt('ic카드를 넣어주세요')) 
-	if(input==진료과[0]){
-		alert('결제가 완료되었습니다.')
-	
-	}else{'잔액부족.'}
-}
+		if (input == 알약[0]) {
+			alert('결제가 완료되었습니다.')
 
+		} else { alert('잔액부족.') }
+
+
+
+			}	
