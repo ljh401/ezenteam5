@@ -1,5 +1,6 @@
  
 /* 이름 = 변수명 let name , HTML class명 Clname
+<<<<<<< HEAD
  생년월일 = 변수명 let securityNum	ClsecurityNum1
  주민번호 = 변수명 let securityNumFull HTML class명 ClsecurityNum1 + ClsecurityNum2
  성별 = 변수명 let sex , HTML class명 Clsex
@@ -79,6 +80,7 @@ function 진료완료(index) {
   // 환자 정보를 다시 출력
   출력();
   수납출력();
+
 }
 
 // 환자 정보를 출력하는 함수
@@ -150,3 +152,41 @@ function 출력() {
   `;
 
 }
+
+ 
+  /*  if(환자정보[index].희망진료과 == '내과'){ html += 진료과[0].약
+                             html += 진료과[0].진료비
+                             return;}
+   if(환자정보[index].희망진료과 == '외과'){ html += 진료과[1].약
+                             html += 진료과[1].진료비
+                             return;}
+   if(환자정보[index].희망진료과 == '정형'){ html += 진료과[2].약
+                             html += 진료과[2].진료비
+                             return;}  
+   
+
+  
+*/
+
+// 수납 함수 
+function pay(index){
+	let inputPay=document.querySelector('.수납금액');
+	let Html=inputPay
+	//인덱스
+	Html=`<tr>
+					<td>내과</td><td>휴대폰약정</td><td>13,000원</td>
+				</tr>`
+	Html+=`<tr>
+					<td>${수납환자[index]}</td><td>${수납환자[index]}</td><td>${수납환자[index]}</td>
+					
+				</tr>`
+				
+	inputPay.innerHTML = Html;	
+			
+	let input=Number(prompt('ic카드를 넣어주세요')) 
+	if(input==진료과[0]){
+		alert('결제가 완료되었습니다.')
+	
+	}else{'잔액부족.'}
+}
+
