@@ -20,8 +20,8 @@
 		<form>	<!-- 정용상 파트 시작 -->
 			<div class ="정용상"> 
 				<span>이름 : <input class="Clname" type="text" ></span>
-				<span>주민등록번호 : <input class="ClsecurityNum1" type="number" > -
-								<input class="ClsecurityNum2" type="password" >
+				<span>주민등록번호 : <input class="ClsecurityNum1" type="number"  oninput="maxlength(this, 6)"> -
+								<input class="ClsecurityNum2" type="password" maxlength="7" >
 				</span>
 				<span>성별 : 남자<input class="Clsex" type="radio" name="sex" value="남자">
 							여자<input class="Clsex" type="radio" name="sex" value="여자">

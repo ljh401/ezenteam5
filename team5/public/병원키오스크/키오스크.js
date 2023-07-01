@@ -45,12 +45,12 @@ function 등록(){
 	let sex = document.querySelector('input[name=sex]:checked').value
 	let hopePart = document.querySelector('input[name=hopePart]:checked').value
 	let securityNumFull = 
-		document.querySelector('.ClsecurityNum1').value
-		+document.querySelector('.ClsecurityNum2').value
+		document.querySelector('.ClsecurityNum1').value +'-'+
+		document.querySelector('.ClsecurityNum2').value
 	if(name=='' || securityNum == '' || securityNumFull == '')
 	{alert('정보를 모두 기입해 주세요.');return;}
-	if(document.querySelector('.ClsecurityNum1').value.length<7 ||
-		document.querySelector('.ClsecurityNum2').value.length<8){
+	if(document.querySelector('.ClsecurityNum1').value.length<6 ||
+		document.querySelector('.ClsecurityNum2').value.length<7){
 		alert('정보를 모두 기입해 주세요.');return;
 		}
 	if(환자정보.length != 0){for(i=0; i<=환자정보.length-1; i++){
@@ -76,6 +76,16 @@ function 등록(){
  	
  	 출력();
 }
+
+function maxlength(x, maxlength){
+	if( x.value.length > maxlength) {
+		x.value
+		= x.value.substr(0, maxlength)
+	}
+}
+
+
+
 
  //정용상 js 파트 종료
  
@@ -137,7 +147,7 @@ let 진료비 = '';
       <th>성별</th>
       <th>주민번호</th>
       <th>진료과</th>
-      <th>제조약</th>
+      <th>처방약</th>
     </tr>
   `;
 
