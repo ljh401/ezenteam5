@@ -37,6 +37,12 @@ for(let i=1; i<=9; i++){
 }
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5
 
 //클릭시 클릭값 등록
 function inputNumber(num){
@@ -134,9 +140,8 @@ function clearBoard() {
   });
 }
 /*
-// 초기화 및 게임 시작
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+
 resetGame();
 createButtons();*/
 
