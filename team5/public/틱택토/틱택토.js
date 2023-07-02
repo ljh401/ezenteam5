@@ -37,12 +37,11 @@ for(let i=1; i<=9; i++){
 }
 
 
-<<<<<<< HEAD
-=======
 
 
 
->>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5
+
+
 
 //클릭시 클릭값 등록
 function inputNumber(num){
