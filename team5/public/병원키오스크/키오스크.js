@@ -202,9 +202,9 @@ function pay() {			//수납함수 start
 		}
 		
 		if (진료비 == input) {
-			alert('결제가완료되었습니다.');
+			alert('결제가 완료 되었습니다.');
 			
-		}else if(진료비>input){alert('잔액이부족합니다.')}
+		}else if(진료비>input){alert('잔액이 부족합니다.')}
 		else if(진료비 < input){
 			alert('거스름돈을 출력합니다.')
 		}
