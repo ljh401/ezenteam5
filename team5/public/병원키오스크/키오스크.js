@@ -190,7 +190,7 @@ let 진료비 = '';
 
      topTable.innerHTML = html;
 
-   
+ 
 
 }
 
@@ -220,12 +220,10 @@ function pay() {			//수납함수 start
 		}else{alert('결제 실패')}
 		
 	}					// f end
-	
+
 }							//수납함수 end
 
 		
-	
 
-	
  
 
