@@ -1,9 +1,6 @@
 
 /* 이름 = 변수명 let name , HTML class명 Clname
-<<<<<<< HEAD
 
-=======
->>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5
  생년월일 = 변수명 let securityNum	ClsecurityNum1
  주민번호 = 변수명 let securityNumFull HTML class명 ClsecurityNum1 + ClsecurityNum2
  성별 = 변수명 let sex , HTML class명 Clsex
@@ -37,127 +34,85 @@ let 진료과 = [
 ];
 
 
-<<<<<<< HEAD
  //정용상 js 파트 시작
  
-function 등록(){
-	if(document.querySelector('input[name=sex]:checked') == undefined || 
-	document.querySelector('input[name=hopePart]:checked') == undefined)
-	{alert('정보를 모두 기입해 주세요.');return;}
-=======
 //정용상 js 파트 시작
 
-function 등록() {
->>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5
-	let name = document.querySelector('.Clname').value
-	let securityNum = document.querySelector('.ClsecurityNum1').value
-	let sex = document.querySelector('input[name=sex]:checked').value
-	let hopePart = document.querySelector('input[name=hopePart]:checked').value
-<<<<<<< HEAD
-	let securityNumFull = 
-		document.querySelector('.ClsecurityNum1').value +'-'+
-		document.querySelector('.ClsecurityNum2').value
-	if(name=='' || securityNum == '' || securityNumFull == '')
-	{alert('정보를 모두 기입해 주세요.');return;}
-	if(document.querySelector('.ClsecurityNum1').value.length<6 ||
-		document.querySelector('.ClsecurityNum2').value.length<7){
-		alert('정보를 모두 기입해 주세요.');return;
-		}
-	if(환자정보.length != 0){for(i=0; i<=환자정보.length-1; i++){
-		if(환자정보[i].이름==name && 환자정보[i].주민번호==securityNumFull){
-			alert('같은 환자가 이미 등록되어 있습니다.');return;
-=======
-	let securityNumFull =
-		document.querySelector('.ClsecurityNum1').value
-		+ document.querySelector('.ClsecurityNum2').value
-	if (환자정보.length != 0) {
-		for (i = 0; i <= 환자정보.length - 1; i++) {
-			if (환자정보[i].이름 == name && 환자정보[i].주민번호 == securityNumFull) {
-				alert('같은 환자가 이미 등록되어 있습니다.'); return;
->>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5
-			}
-		}
-	}
-<<<<<<< HEAD
- 	let patientInfo = {이름 : name,
- 						생년월일 : securityNum,
- 						성별 : sex,
- 						희망진료과 : hopePart,
- 						주민번호 : securityNumFull,
- 						수납상태 : false
- 						}
- 	환자정보.push(patientInfo)
- 	alert('접수가 완료되었습니다.')
- 	document.querySelector('.Clname').value = '';
- 	document.querySelector('.ClsecurityNum1').value = '';
- 	document.querySelector('.ClsecurityNum2').value = '';
- 	document.querySelector('input[name=sex]:checked').checked = false;
- 	document.querySelector('input[name=hopePart]:checked').checked = false;
- 	
- 	 출력();
-=======
-	let patientInfo = {
-		이름: name,
-		생년월일: securityNum,
-		성별: sex,
-		희망진료과: hopePart,
-		주민번호: securityNumFull
-	}
-	환자정보.push(patientInfo)
-	alert('접수가 완료되었습니다.')
-	document.querySelector('.Clname').value = '';
-	document.querySelector('.ClsecurityNum1').value = '';
-	document.querySelector('.ClsecurityNum2').value = '';
-	document.querySelector('input[name=sex]:checked').checked = false;
-	document.querySelector('input[name=hopePart]:checked').checked = false;
-
-	출력();
->>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5
+function 등록(){
+   if(document.querySelector('input[name=sex]:checked') == undefined || 
+   document.querySelector('input[name=hopePart]:checked') == undefined)
+   {alert('정보를 모두 기입해 주세요.');return;}
+   let name = document.querySelector('.Clname').value
+   let securityNum = document.querySelector('.ClsecurityNum1').value
+   let sex = document.querySelector('input[name=sex]:checked').value
+   let hopePart = document.querySelector('input[name=hopePart]:checked').value
+   let securityNumFull = 
+      document.querySelector('.ClsecurityNum1').value +'-'+
+      document.querySelector('.ClsecurityNum2').value
+   if(name=='' || securityNum == '' || securityNumFull == '')
+   {alert('정보를 모두 기입해 주세요.');return;}
+   if(document.querySelector('.ClsecurityNum1').value.length<6 ||
+      document.querySelector('.ClsecurityNum2').value.length<7){
+      alert('정보를 모두 기입해 주세요.');return;
+      }
+   if(환자정보.length != 0){for(i=0; i<=환자정보.length-1; i++){
+      if(환자정보[i].이름==name && 환자정보[i].주민번호==securityNumFull){
+         alert('같은 환자가 이미 등록되어 있습니다.');return;
+         }
+      }
+   }
+    let patientInfo = {이름 : name,
+                   생년월일 : securityNum,
+                   성별 : sex,
+                   희망진료과 : hopePart,
+                   주민번호 : securityNumFull,
+                   수납상태 : false
+                   }
+    환자정보.push(patientInfo)
+    alert('접수가 완료되었습니다.')
+    document.querySelector('.Clname').value = '';
+    document.querySelector('.ClsecurityNum1').value = '';
+    document.querySelector('.ClsecurityNum2').value = '';
+    document.querySelector('input[name=sex]:checked').checked = false;
+    document.querySelector('input[name=hopePart]:checked').checked = false;
+    
+     출력();
 }
 
-<<<<<<< HEAD
 function maxlength(x, maxlength){
-	if( x.value.length > maxlength) {
-		x.value
-		= x.value.substr(0, maxlength)
-	}
+   if( x.value.length > maxlength) {
+      x.value
+      = x.value.substr(0, maxlength)
+   }
 }
 
 
-
-
- //정용상 js 파트 종료
- 
-=======
-//정용상 js 파트 종료
-
->>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5
 // 진료완료 버튼을 클릭할 때 호출되는 함수
 function 진료완료(index) {
-<<<<<<< HEAD
+
   // 해당 인덱스의 환자 정보를 수납환자 배열에 push
-=======
+
 	// 해당 인덱스의 환자 정보를 수납환자 배열에 push
 	수납환자.push(환자정보[index]);
->>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5
 
-<<<<<<< HEAD
+
+
   // 해당 인덱스의 환자 정보를 환자정보 배열에서 삭제
   환자정보[index].수납상태 = true;
-=======
+
 	// 해당 인덱스의 환자 정보를 환자정보 배열에서 삭제
 	환자정보.splice(index, 1);
->>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5
 
-<<<<<<< HEAD
+
+
   // 환자 정보를 다시 출력
   출력();
   수납출력(index);
-=======
+
 	// 환자 정보를 다시 출력
 	출력();
 	수납출력();
->>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5
+
 
 }
 
@@ -165,7 +120,7 @@ function 진료완료(index) {
 function 출력() {
 	let html = `<tr> <th> 이름 </th> <th> 생년월일 </th> <th> 진료과 </th> <th> 비고 </th> </tr>`;
 
-<<<<<<< HEAD
+
   for (let i = 0; i < 환자정보.length; i++) {
 				  if( 환자정보[i].수납상태 == false  ){
 					  
@@ -179,7 +134,7 @@ function 출력() {
 
 		  
 	  }
-=======
+
 	for (let i = 0; i < 환자정보.length; i++) {
 		html += `<tr>
                 <td>${환자정보[i].이름}</td>
@@ -188,7 +143,7 @@ function 출력() {
                 <td><button onclick="진료완료(${i})">진료완료</button></td>
              </tr>`;
 	}
->>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5
+
 
 	// table에 HTML 넣어주기
 	const outputTable = document.getElementById('outputTable');
@@ -208,20 +163,12 @@ let 진료비 = '';
 
 
 
-<<<<<<< HEAD
+
  function 수납출력(index) {
   let topTable = document.querySelector('#topTable');
-  
-  let html = `
-=======
-function 수납출력() {
-	let topTable = document.querySelector('#topTable');
-
-
-
 
 	let html = `
->>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5
+
     <tr>
       <th>이름</th>
       <th>성별</th>
@@ -231,7 +178,7 @@ function 수납출력() {
     </tr>
   `;
 
-<<<<<<< HEAD
+
  
     if (환자정보[index].희망진료과 == '내과') {
   	알약 = 진료과[0].약.join(', ');
@@ -243,7 +190,7 @@ function 수납출력() {
   	알약 = 진료과[2].약.join(', ');
   	진료비 = 진료과[2].진료비;
 	}
-=======
+
 	for (let i = 0; i < 수납환자.length; i++) {
 		if (수납환자[i].희망진료과 == '내과') {
 			알약 = 진료과[0].약.join(', ');
@@ -255,24 +202,23 @@ function 수납출력() {
 			알약 = 진료과[2].약.join(', ');
 			진료비 = 진료과[2].진료비;
 		}
->>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5
+
 
 		
 
 		html += `
       <tr>
-<<<<<<< HEAD
+
         <td>${환자정보[index].이름}</td>
         <td>${환자정보[index].성별}</td>
         <td>${환자정보[index].주민번호}</td>
         <td>${환자정보[index].희망진료과}</td>
-=======
+
 
         <td>${수납환자[i].이름}</td>
         <td>${수납환자[i].성별}</td>
         <td>${수납환자[i].주민번호}</td>
         <td>${수납환자[i].희망진료과}</td>
->>>>>>> branch '차정훈' of https://github.com/ljh401/ezenteam5
         <td>${알약}</td>
         
 
@@ -297,6 +243,10 @@ function 수납출력() {
  if(환자정보[index].희망진료과 == '정형'){ html += 진료과[2].약
 						   html += 진료과[2].진료비
 						   return;}  
+ 
+ 
+
+ 
  
  
 */
@@ -331,8 +281,4 @@ function pay() {			//수납함수 start
 }							//수납함수 end
 
 		
-	
-
-	
- 
-
+	}
