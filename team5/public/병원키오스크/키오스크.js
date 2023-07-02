@@ -144,7 +144,7 @@ function 수납출력() {
 			진료비 = 진료과[2].진료비;
 		}
 
-
+		
 
 		html += `
       <tr>
@@ -184,25 +184,37 @@ function 수납출력() {
 */
 
 // 수납 함수 
-function pay() {
-	let input = Number(prompt('ic카드를 넣어주세요'))
-	for (let i = 0; i < 수납환자.length; i++) {
+function pay() {			//수납함수 start
+	
+	let input = prompt('ic카드를 넣어주세요');		//입력값 받기 
+
+	for (let i = 0; i < 수납환자.length; i++) {		//진료비  찾기 for start
 		if (수납환자[i].희망진료과 == '내과') {
 			진료비 = 진료과[0].진료비;
-		}	
-		else if (수납환자[i].희망진료과 == '외과') {
-			
-			진료비 = 진료과[1].진료비;
-		}
-		else if (수납환자[i].희망진료과 == '정형외과') {
 		
+			}
+		 else if (수납환자[i].희망진료과 == '외과') {
+			진료비 = 진료과[1].진료비;
+			
+		} else if (수납환자[i].희망진료과 == '정형외과') {
 			진료비 = 진료과[2].진료비;
+			
 		}
-	}
+		
+		if (진료비 == input) {
+			alert('결제가완료되었습니다.');
+			
+		}else if(진료비>input){alert('잔액이부족합니다.')}
+		else if(진료비 < input){
+			alert('거스름돈을 출력합니다.')
+		}
+	}					// f end
+	
+}							//수납함수 end
 
+		
+	
 
-	if (input == 진료비) {
-		alert('결제가 완료되었습니다.')
-			console.log(진료비)
-	} 
-}	
+	
+ 
+
