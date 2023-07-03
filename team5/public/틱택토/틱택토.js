@@ -37,7 +37,17 @@ for(let i=1; i<=9; i++){
 }
 
 
+<<<<<<< HEAD
+=======
 
+
+
+>>>>>>> branch '이진형' of https://github.com/ljh401/ezenteam5.git
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch '이진형' of https://github.com/ljh401/ezenteam5.git
 
 //클릭시 클릭값 등록
 function inputNumber(num){
