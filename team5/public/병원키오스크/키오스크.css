@@ -1,57 +1,80 @@
+/* 키오스크.css 파일 */
 
-@charset "UTF-8";
+/* 전체구역 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
 
-/* 테이블 스타일 */
+/* 정용상 파트 */
+.정용상 {
+  margin-bottom: 20px;
+}
+
+.Clname,
+.ClsecurityNum1,
+.ClsecurityNum2 {
+  margin-right: 10px;
+}
+
+.Clsex,
+.ClhopePart {
+  margin-right: 5px;
+}
+
+/* 진료리스트 파트 */
+.황태웅title {
+  font-size: 20px;
+  margin-top: 0;
+}
 
 #outputTable {
   width: 100%;
   border-collapse: collapse;
-  text-align:center;
+  margin-bottom: 20px;
+}
+
+#outputTable th,
+#outputTable td {
+  padding: 8px;
+  text-align: left;
 }
 
 #outputTable th {
   background-color: #f2f2f2;
+}
+
+/* 처방전 파트 */
+.진형정훈 {
+  margin-top: 20px;
+}
+
+.진형정훈 h1 {
+  margin-top: 0;
+}
+
+#topTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#topTable th,
+#topTable td {
   padding: 8px;
+  text-align: left;
 }
 
-#outputTable td {
-  padding: 8px;
+#topTable th {
+  background-color: #f2f2f2;
 }
 
-#outputTable tr:nth-child(even) {
-  background-color: #f9f9f9;
+#수납금액 {
+  margin-bottom: 20px;
 }
 
-/* 버튼 스타일 */
-button {
-  padding: 8px 16px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  cursor: pointer;
+#수납금액 button {
+  padding: 10px 20px;
+  font-size: 16px;
 }
-
-button:hover {
-  background-color: #45a049;
-}
-.황태웅title {
-  text-align: center;
-
-}
-
-.정용상{
-	display : flex;
-	flex-direction: column;
-}
-
-.정용상 button{
-	width: 100px;
-}
-
-.ClsecurityNum1, .ClsecurityNum2
-,.Clname{
-	width : 100px;
-	
-
-}
-
