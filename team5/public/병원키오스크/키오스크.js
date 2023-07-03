@@ -26,7 +26,6 @@
 
 
 
-let 수납환자 = [];
 let 환자정보 = [];
 let 진료과 = [
 	{ 약: ['휴대폰약정', '초코파이정', '코카인'], 진료비: '13000' },
@@ -88,7 +87,7 @@ function maxlength(x, maxlength){
 
 
 
-
+let 수납중인index = -1;
 
 // 진료완료 버튼을 클릭할 때 호출되는 함수
 function 진료완료(index) {
@@ -96,7 +95,9 @@ function 진료완료(index) {
   // 해당 인덱스의 환자 정보를 수납환자 배열에 push
 
 	// 해당 인덱스의 환자 정보를 수납환자 배열에 push
-	수납환자.push(환자정보[index]);
+	//수납환자.push(환자정보[index]);
+	
+	//console.log( 수납환자 );
 
 
 
@@ -107,6 +108,7 @@ function 진료완료(index) {
   // 환자 정보를 다시 출력
   출력();
   수납출력(index);
+  수납중인index = index;
 
 
 }
@@ -134,6 +136,29 @@ function 출력() {
   outputTable.innerHTML = html;
   
 }
+
+function 수납자출력() {
+  let html = `<tr> <th> 이름 </th> <th> 생년월일 </th> <th> 진료과 </th> </tr>`;
+
+  for (let i = 0; i < 환자정보.length; i++) {
+              if( 환자정보[i].수납상태 == true  ){
+                 
+                     html += `<tr>
+                         <td>${환자정보[i].이름}</td>
+                         <td>${환자정보[i].생년월일}</td>
+                         <td>${환자정보[i].희망진료과}</td>
+                      </tr>`;
+           }
+
+        
+     }
+
+  // table에 HTML 넣어주기
+  const outputTable = document.getElementById('outputTable2');
+  outputTable.innerHTML = html;
+  
+}
+
 
 
 // 환자 정보 출력
@@ -198,19 +223,19 @@ let 진료비 = '';
 
 
 // 수납 함수 
-function pay(index) {			//수납함수 start
+function pay() {			//수납함수 start
 	
 	let input = prompt('ic카드를 넣어주세요');		//입력값 받기 
 
-	for (let i = 0; i < 수납환자.length; i++) {		//진료비  찾기 for start
-		if (수납환자[i].희망진료과 == '내과') {
+	
+		if (환자정보[수납중인index].희망진료과 == '내과') {
 			진료비 = 진료과[0].진료비;
 		
 			}
-		 else if (수납환자[i].희망진료과 == '외과') {
+		 else if (환자정보[수납중인index].희망진료과 == '외과') {
 			진료비 = 진료과[1].진료비;
 			
-		} else if (수납환자[i].희망진료과 == '정형외과') {
+		} else if (환자정보[수납중인index].희망진료과 == '정형외과') {
 			진료비 = 진료과[2].진료비;
 			
 		}
@@ -218,20 +243,28 @@ function pay(index) {			//수납함수 start
 		if (parseInt(input) >= parseInt(진료비)) {
 			alert('결제가 완료 되었습니다.');
 		  // 변수 초기화
-      수납환자[i].이름 = '';
-      수납환자[i].성별 = '';
-      수납환자[i].주민번호 = '';
-      수납환자[i].희망진료과 = '';
+      /*환자정보[수납중인index].이름 = '';
+      환자정보[수납중인index].성별 = '';
+      환자정보[수납중인index].주민번호 = '';
+      환자정보[수납중인index].희망진료과 = '';
+     
       알약 = '';
       진료비 = '';
-
+       */
+      환자정보[수납중인index].수납상태 = true;
+	
+		
+	
       // 재출력
       출력();
-      수납출력(i);
+      수납출력( 수납중인index );
+      수납자출력();
+      
+      document.querySelector('#topTable').innerHTML = ``;
+      
     }else{
-			alert('결제 실패')};
-		
-	}					// f end
+			alert('결제 실패')
+	};
 
 }							//수납함수 end
 
