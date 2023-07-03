@@ -6,23 +6,58 @@ body {
   padding: 20px;
 }
 
+#wrap{
+	width: 100%;
+	display:  flex;
+	justify-content: space-around;
+	
+}
+
 /* 정용상 파트 */
 .정용상 {
-  margin-bottom: 20px;
+margin-bottom: 20px;
+display: flex;
+flex-direction: column;
+width: 600px;
+border: solid 1px lightgray;
+padding: 15px;
 }
+
+.정용상 button{
+	width: 50px;
+	margin: 15px 0px;
+	
+}
+.정용상 h1{
+	margin-left: 50px;
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px
+	
+	
+	
+}
+
 
 .Clname,
 .ClsecurityNum1,
 .ClsecurityNum2 {
-  margin-right: 10px;
+  margin: 10px 5px;
 }
 
 .Clsex,
 .ClhopePart {
-  margin-right: 5px;
+	margin: 15px 10px;  
+
 }
 
 /* 진료리스트 파트 */
+.황태웅{
+	width: 600px;
+	
+	
+}
+
 .황태웅title {
   font-size: 20px;
   margin-top: 0;
