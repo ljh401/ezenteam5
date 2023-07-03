@@ -79,6 +79,21 @@ padding: 15px;
   background-color: #f2f2f2;
 }
 
+#outputTable2 {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#outputTable2 th,
+#outputTable2 td {
+  padding: 8px;
+  text-align: left;
+}
+
+#outputTable2 th {
+  background-color: #f2f2f2;
+}
 /* 처방전 파트 */
 .진형정훈 {
   margin-top: 20px;
