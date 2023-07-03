@@ -201,7 +201,8 @@ let 진료비 = '';
 function pay() {			//수납함수 start
 	
 	let input = prompt('ic카드를 넣어주세요');		//입력값 받기 
-
+	
+	
 	for (let i = 0; i < 수납환자.length; i++) {		//진료비  찾기 for start
 		if (수납환자[i].희망진료과 == '내과') {
 			진료비 = 진료과[0].진료비;
@@ -218,6 +219,7 @@ function pay() {			//수납함수 start
 		if (parseInt(input) >= parseInt(진료비)) {
 			alert('결제가 완료 되었습니다.');
 			
+						
 		}else{alert('결제 실패')}
 		
 	}					// f end
