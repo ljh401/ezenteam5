@@ -198,10 +198,9 @@ let 진료비 = '';
 
 
 // 수납 함수 
-function pay() {			//수납함수 start
+function pay(index) {			//수납함수 start
 	
 	let input = prompt('ic카드를 넣어주세요');		//입력값 받기 
-	
 
 	for (let i = 0; i < 수납환자.length; i++) {		//진료비  찾기 for start
 		if (수납환자[i].희망진료과 == '내과') {
