@@ -53,9 +53,9 @@
 
     html += `
       <tr>
-        <td>${환자.name}</td>
-        <td>${환자.sex}</td>
-        <td>${환자.securityNum}</td>
+        <td>${환자.이름}</td>
+        <td>${환자.성별}</td>
+        <td>${환자.주민번호}</td>
         <td>${환자.진료과}</td>
       </tr>
     `;
