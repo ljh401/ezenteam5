@@ -1,15 +1,16 @@
-/* 키오스크.css 파일 */
 
 /* 전체구역 */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
+  display: flex;
 }
 
 /* 정용상 파트 */
 .정용상 {
   margin-bottom: 20px;
+  display: block;
 }
 
 .Clname,
@@ -22,13 +23,17 @@ body {
 .ClhopePart {
   margin-right: 5px;
 }
-
+.황태웅{
+	display: block;
+}
 /* 진료리스트 파트 */
 .황태웅title {
   font-size: 20px;
   margin-top: 0;
 }
-
+.진형정훈{
+	display: block;
+}
 #outputTable {
   width: 100%;
   border-collapse: collapse;
@@ -78,3 +83,4 @@ body {
   padding: 10px 20px;
   font-size: 16px;
 }
+
