@@ -7,8 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-	<p>오시는길</p>
-
+			<%@include file="../headder.jsp"%>
+				<p>오시는길</p>
+		
+			<%@include file="../footer.jsp"%>
 </body>
 </html>

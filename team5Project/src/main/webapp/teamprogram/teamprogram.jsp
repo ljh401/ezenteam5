@@ -9,8 +9,9 @@
 <body>
 
 	
-	
-	<p>단체프로그램</p>
-	
+			<%@include file="../headder.jsp"%>
+				<p>단체프로그램</p>
+		
+			<%@include file="../footer.jsp"%>
 </body>
 </html>

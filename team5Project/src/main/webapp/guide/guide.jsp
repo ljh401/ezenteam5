@@ -8,7 +8,9 @@
 </head>
 <body>
 
-	<p>재관측안내</p>
-
+			<%@include file="../headder.jsp"%>
+				<p>재관측안내</p>
+		
+			<%@include file="../footer.jsp"%>
 </body>
 </html>

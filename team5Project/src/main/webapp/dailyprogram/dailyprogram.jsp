@@ -8,7 +8,10 @@
 </head>
 <body>
 
-	<p>일일프로그램</p>
 
+			<%@include file="../headder.jsp"%>
+				<p>일일프로그램</p>
+		
+			<%@include file="../footer.jsp"%>
 </body>
 </html>

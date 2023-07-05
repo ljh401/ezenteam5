@@ -8,9 +8,11 @@
 </head>
 <body>
 
-
-	<p>공지사항</p>
+	<%@include file="../headder.jsp"%>
+		
+		<p>공지사항</p>
 	
+	<%@include file="../footer.jsp"%>
 	
 		
 	
