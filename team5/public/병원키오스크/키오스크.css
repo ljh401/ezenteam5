@@ -1,1 +1,130 @@
-@charset "UTF-8";
+
+/* 전체구역 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+#wrap{
+	width: 100%;
+	display:  flex;
+	justify-content: space-around;
+	
+}
+
+/* 정용상 파트 */
+.정용상 {
+margin-bottom: 20px;
+display: flex;
+flex-direction: column;
+width: 600px;
+border: solid 1px lightgray;
+padding: 15px;
+}
+
+.정용상 button{
+	width: 50px;
+	margin: 15px 0px;
+	
+}
+.정용상 h1{
+	margin-left: 50px;
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px
+	
+	
+	
+}
+
+
+.Clname,
+.ClsecurityNum1,
+.ClsecurityNum2 {
+  margin: 10px 5px;
+}
+
+.Clsex,
+.ClhopePart {
+	margin: 15px 10px;  
+
+}
+
+/* 진료리스트 파트 */
+.황태웅{
+	width: 600px;
+	
+	
+}
+
+.황태웅title {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+#outputTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#outputTable th,
+#outputTable td {
+  padding: 8px;
+  text-align: left;
+}
+
+#outputTable th {
+  background-color: #f2f2f2;
+}
+
+#outputTable2 {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#outputTable2 th,
+#outputTable2 td {
+  padding: 8px;
+  text-align: left;
+}
+
+#outputTable2 th {
+  background-color: #f2f2f2;
+}
+/* 처방전 파트 */
+.진형정훈 {
+  margin-top: 20px;
+}
+
+.진형정훈 h1 {
+  margin-top: 0;
+}
+
+#topTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#topTable th,
+#topTable td {
+  padding: 8px;
+  text-align: left;
+}
+
+#topTable th {
+  background-color: #f2f2f2;
+}
+
+#수납금액 {
+  margin-bottom: 20px;
+}
+
+#수납금액 button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+

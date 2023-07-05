@@ -3,39 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="키오스크.css" rel="stylesheet">
+
+	<link href="키오스크.css" rel="stylesheet">
+	
 </head>
 <body>
 
+	
 
-	<div>
-		<div class="정용상"></div>
-		<div class="황태웅"></div>
-		<!-- 상단 처방전 -->
-		<div id="수납">
-			<h1>처방전</h1>
-			<table id="topTable" border="1">
-				<!-- innerHTML -->
+
+
+
+	<div id="warp"> <!-- 전체구역 start -->
+
+		
+		<form>	<!-- 정용상 파트 시작 -->
+			<div class ="정용상"> 
+				<h1>병원 접수</h1>
+				<span>이름 : <input class="Clname" type="text" ></span>
+				<span>주민등록번호 : <input class="ClsecurityNum1" type="number"  oninput="maxlength(this, 6)">-<input class="ClsecurityNum2" type="password" maxlength="7" >
+				</span>
+				<span>성별 : 남자<input class="Clsex" type="radio" name="sex" value="남자">
+							여자<input class="Clsex" type="radio" name="sex" value="여자">
+				</span>
+				<span>
+					희망 진료과 : 내과<input class="ClhopePart" type="radio" name="hopePart" value="내과">
+								외과<input class="ClhopePart" type="radio" name="hopePart" value="외과">
+								정형외과<input class="ClhopePart" type="radio" name="hopePart" value="정형외과">
+				</span>
+					
+				<button onclick="등록()"type="button">접수</button>
+			</div>
+		</form> <!-- 정용상 파트 종료 -->
+		
+		<!-- 진료리스트 s -->
+		<div class = "황태웅">
+			<h2 class="황태웅title">진료리스트</h2>
+			<table id="outputTable" border="1">
+			<!-- innerHTML -->
 			</table>
-			<table id ="bottomTable" border ="1">
-				<!-- innerHTML -->
+		</div><!-- 진료리스트 end -->
+
+		
+
+
+
+		<!--  처방전 -->
+		<div class="진형정훈">
+			<div>
+				<h1>처방전</h1>
+				<table id="topTable" border="1">
+					<!-- innerHTML -->
+				</table>
+			</div>
+
+			<div>
+				<table border="1" id="수납금액">		
+					<tr>
+						<td><button onclick="pay()">수납</button></td>
+					</tr>
+				</table>
+			</div>
+		</div> <!-- 진형정훈 , 처방전 end -->
+		
+		
+				<!-- 진료리스트 s -->
+		<div class = "황태웅">
+			<h2 class="황태웅title">수납리스트</h2>
+			<table id="outputTable2" border="1">
+			<!-- innerHTML -->
 			</table>
-		</div>
-		<!-- 상단 처방전 end  -->
-		<div>
-			<button onclick="pay()">수납</button>
-		</div>
-	</div>
+		</div><!-- 진료리스트 end -->
+		
 
+	</div> <!-- 전체  end -->
+	
+	
 
-
-
-
-
-
-	<script src="키오스크.js" type="text/javascript"></script>
-
-
-
+	<script src="키오스크.js" type="text/javascript">
+	
+	</script>
 </body>
 </html>
