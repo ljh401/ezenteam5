@@ -8,11 +8,9 @@
 </head>
 <body>
 
-	<%@include file="headder.jsp"%>
-		<p>
-			중미산 메인페이지
-		</p>
-	<%@include file="footer.jsp"%>
-
+			<%@include file="../headder.jsp"%>
+				<p>재관측안내</p>
+		
+			<%@include file="../footer.jsp"%>
 </body>
 </html>
