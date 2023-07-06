@@ -9,6 +9,7 @@
 	<link href="font-awesome.min.css" rel="stylesheet">
 	<link href="slick.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
+	<link href="default.css" rel="stylesheet">
 </head>
 
 
@@ -30,7 +31,7 @@
 			<div class="lnbwrap">
 				<div class="maxinner clearfix">
 					<h1>
-						<a href="/main/main.php"><img src="../img/logo.png"
+						<a href="../Main/Main.png"><img src="../img/logo.png"
 							alt="하늘아래 첫 언덕, 중미산천문대"></a>
 					</h1>
 					<div class="lnb">
@@ -56,12 +57,12 @@
 									<li><a href="../Team_program/Team_program.jsp">학교 및 기타단체</a>
 										<ul class="sub_depth">
 											<li><a href="../Team_program/Team_program.jsp">1박2일 프로그램</a></li>
-											<li><a href="/contents/night.php">밤 프로그램</a></li>
-											<li><a href="/contents/daytime.php">낮 프로그램</a></li>
+											<li><a href="">밤 프로그램</a></li>
+											<li><a href="">낮 프로그램</a></li>
 										</ul></li>
 									<!--<li><a href="/contents/group.php">신청 및 확인</a></li>-->
-									<li><a href="/contents/registration.php">참가신청</a></li>
-									<li><a href="/contents/registration_number.php">참가신청확인</a></li>
+									<li><a href="">참가신청</a></li>
+									<li><a href="">참가신청확인</a></li>
 								</ul></li>
 
 							<li><a href="../Re_observation_guide/Re_observation_guide.jsp">재관측안내</a></li>
