@@ -5,6 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <title>중미산천문대</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi">
+	<link href="http://www.astrocafe.co.kr/css/default.css?ver=171222" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&amp;subset=korean"rel="stylesheet" type="text/css">
+	<link href="../Headerfont-awesome.min.css" rel="stylesheet">
+	<link href="../Headerslick.css" rel="stylesheet">
+	<link href="../Header/style.css" rel="stylesheet">
+	<link href="../Header/default.css" rel="stylesheet">
 </head>
 <body>
 
@@ -129,5 +137,17 @@
 		<!-- FOOTER -->
 		<%@include file="../Footer/Footer.jsp" %>
 	</div> <!-- wrap end -->
+	<!-- 스크립트 호출 -->
+<script type="text/javascript" src="../Header/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../Header/common.js?ver=181222"></script>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=64j1zgkjuk"></script>
+<script type="text/javascript" src="../Header/slick.min.js"></script>
+<script type="text/javascript" src="../Header/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../Header/common.js"></script>
+<script src="http://www.astrocafe.co.kr/js/jquery.menu.js?ver=171222"></script>
+<script src="http://www.astrocafe.co.kr/js/common.js?ver=171222"></script>
+<script src="http://www.astrocafe.co.kr/js/wrest.js?ver=171222"></script>
+<script src="http://www.astrocafe.co.kr/js/placeholders.min.js"></script>
+	
 </body>
 </html>

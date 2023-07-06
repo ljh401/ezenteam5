@@ -9,6 +9,7 @@
 	<link href="font-awesome.min.css" rel="stylesheet">
 	<link href="slick.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
+	<link href="default.css" rel="stylesheet">
 </head>
 
 
