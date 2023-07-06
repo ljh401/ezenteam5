@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	ㅎㅇ
+
+	<p>오시는길</p>
+
 </body>
 </html>
