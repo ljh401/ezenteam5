@@ -9,15 +9,18 @@
 </head>
 <body>
 
-	<%@include file="../Header/Header.jsp" %>
+	<%-- <%@include file="../Header/Header.jsp" %> --%>
 		<!-- SUB MENU -->
                <div class="sub_lnbwrap">
-                  <h3>재관측안내</h3>
+                  <h3>찾아오시는길</h3>
                   <div class="m_menu">
                      <h3 class="hide">하위메뉴보기</h3>
-                     <a href="#none"> 재관측안내 </a> <span></span>
+                     <a href="#none"> 찾아오시는길 </a>
                   </div>
                   <ul class="sub_lnb">
+                  	<li>
+                  		<a href ="#">찾아오시는길</a>
+                  	</li>
                   </ul>
                   <div class="minbanner">
                      <a href="https://talk.naver.com/ct/wc3wsn" target="_blank">
@@ -25,7 +28,13 @@
                      </a>
                   </div>
                </div>
-	<%@include file="../Footer/Footer.jsp" %>
+               
+               <div class = "main_lnbwrap">
+               		<div>
+               			<h3>찾아오시는 길</h3>
+               		</div>
+               </div>
+	<%-- <%@include file="../Footer/Footer.jsp" %> --%>
 
 
 </body>
