@@ -8,7 +8,22 @@
 </head>
 <body>
 
-	<p>오시는길</p>
+	<%@include file="../Header/Header.jsp" %>
+		<div>
+			<div>
+				<h3>찾아오시는 길</h3>
+				<div></div>
+				<div></div>
+			</div>
+			<div>
+			
+			
+			</div>
+		
+		
+		</div>
+	<%@include file="../Footer/Footer.jsp" %>
+
 
 </body>
 </html>

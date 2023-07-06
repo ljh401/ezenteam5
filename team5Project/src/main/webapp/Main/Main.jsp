@@ -8,11 +8,11 @@
 </head>
 <body>
 
-	<%@include file="headder.jsp"%>
+	<%@include file="../Header/Header.jsp" %>
 		<p>
-			중미산 메인페이지
+			중미산 메인페이지!!
 		</p>
-	<%@include file="footer.jsp"%>
+	<%@include file="../Footer/Footer.jsp" %>
 
 
 </body>
