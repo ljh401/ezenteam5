@@ -12,24 +12,11 @@
 		<a href="#skipcon" class="skip">본문 바로가기</a>
 
 		<!-- HEADER -->
-		<%@include file="../header.jsp" %>
+		<%@include file="../Header/Header.jsp" %>
 
 		<div id="sub">
 
-			<!-- SUB VISUAL -->
-			<div id="sub_visual">
-				<div class="txtwrap">
-					<h2>
-						<p>별이 보고 싶을 땐</p>
-						<div class="clearfix">
-							<strong>중미산천문대</strong> <span>수도권에서 1시간 거리에 위치한 중미산천문대는<br>수도권에서
-								가장 많은 별들을 볼 수 있는 곳입니다.
-							</span>
-						</div>
-					</h2>
-				</div>
-				<div class="bg"></div>
-			</div>
+			<%@include file="../Header_bar/Header_bar.jsp" %>
 
 			<div id="skipcon">
 				<div id="sub_contents">
@@ -56,7 +43,7 @@
 							<h3>재관측안내</h3>
 
 							<div class="breadcrumb">
-								<img src="/img/ico/ico_home.png" alt=""><strong>HOME
+								<img src="../img/ico_home.png" alt=""><strong>HOME
 									<span>&gt;</span> 재관측안내
 								</strong>
 							</div>
@@ -140,7 +127,7 @@
 		</div> <!-- sub end -->
 		
 		<!-- FOOTER -->
-		<%@include file="../footer.jsp" %>
+		<%@include file="../Footer/Footer.jsp" %>
 	</div> <!-- wrap end -->
 </body>
 </html>
