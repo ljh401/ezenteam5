@@ -1,6 +1,36 @@
 // 전역 변수
+
+var g5_url       = "http://www.astrocafe.co.kr";
+var g5_bbs_url   = "http://www.astrocafe.co.kr/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
 var errmsg = "";
 var errfld = null;
+
+mmenu = 6;
+smenu = 1;
+tmenu = 1;
+
+$(document).ready(function() {
+    // 서브메뉴 클래스 추가
+    var $sublnb = $(".sub_lnb>li");
+    $sublnb.removeClass('on').eq(smenu-1).addClass('on').find('li').removeClass('on').eq(tmenu-1).addClass('on');
+
+    $('.tablist li').on('click',function(){
+        //initMap();
+        var num = $(this).index();
+        if(!$(this).hasClass('on')){
+            $('.tabarea').removeClass('open');
+            $('.tablist li').removeClass('on').eq(num).addClass('on');
+            $('.tabarea').hide().eq(num).addClass('open').fadeIn(400);
+        }
+    });
+});
 
 // 필드 검사
 function check_field(fld, msg)
