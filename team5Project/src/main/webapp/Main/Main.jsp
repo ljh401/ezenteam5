@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD
    <%@include file="../Header/Header.jsp" %>
       
    <div class = "main">

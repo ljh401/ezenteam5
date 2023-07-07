@@ -17,7 +17,7 @@
 					<div class="left">
 						<h2>
 							<a href="/main/main.php"><img
-								src="/img/common/logo_white.png" alt="하늘아래 첫 언덕, 중미산 천문대"></a>
+								src="../img/logo_white.png" alt="하늘아래 첫 언덕, 중미산 천문대"></a>
 						</h2>
 						<div class="address">
 							<span>상호: 중미산천문대 <span class="bar">|</span> 대표: 고경옥 <span
