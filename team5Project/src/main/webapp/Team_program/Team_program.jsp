@@ -10,14 +10,14 @@
 <body>
 
 	
-<%-- <%@include file="../Header/Header.jsp" %> 헤더 링크 
+ <%@include file="../Header/Header.jsp" %> 헤더 링크 
 <%@include file="../Header_bar/Header_bar.jsp" %> 헤더 바 링크
 
---%>
+
 <div>헤더 영역</div>
 <div>헤더바</div>
 	 
-	 <div class="wrap"><!-- 전체페이지 시작 -->
+	 <div id="wrap"><!-- 전체페이지 시작 -->
 	 	
 	 	<div class="sideMenu"> <!-- 사이드메뉴 시작 -->
 	 		<p>사이드메뉴</p>
@@ -103,7 +103,7 @@
 
 	</div> <!-- 전체페이지 종료 -->
 		
-<%-- <%@include file="../Footer/Footer.jsp" %> 푸터링크 --%>
+ <%@include file="../Footer/Footer.jsp" %> 푸터링크
 <div>푸터 영역</div>
 	
 	<script src="Team_program.js" type="text/javascript"></script>
