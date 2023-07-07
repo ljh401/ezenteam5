@@ -8,12 +8,18 @@
 </head>
 <body>
 
-	<%@include file="headder.jsp"%>
-		<p>
-			중미산 메인페이지
-		</p>
-	<%@include file="footer.jsp"%>
+	<%@include file="../Header/Header.jsp" %>
+		
+	<div>
+		<div></div>
+		<div>
+			<img class = "jimg" />
+		</div>
+		<div></div>
+	</div>
+	<%@include file="../Footer/Footer.jsp" %>
 
-
+	<script src = "Main.js"type="text/javascript"></script>
+	
 </body>
 </html>

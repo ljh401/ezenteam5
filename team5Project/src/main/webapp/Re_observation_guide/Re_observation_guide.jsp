@@ -5,6 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <title>중미산천문대</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi">
+	<link href="http://www.astrocafe.co.kr/css/default.css?ver=171222" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&amp;subset=korean"rel="stylesheet" type="text/css">
+	<link href="../Headerfont-awesome.min.css" rel="stylesheet">
+	<link href="../Headerslick.css" rel="stylesheet">
+	<link href="../Header/style.css" rel="stylesheet">
+	<link href="../Header/default.css" rel="stylesheet">
 </head>
 <body>
 
@@ -12,24 +20,11 @@
 		<a href="#skipcon" class="skip">본문 바로가기</a>
 
 		<!-- HEADER -->
-		<%@include file="../header.jsp" %>
+		<%@include file="../Header/Header.jsp" %>
 
 		<div id="sub">
 
-			<!-- SUB VISUAL -->
-			<div id="sub_visual">
-				<div class="txtwrap">
-					<h2>
-						<p>별이 보고 싶을 땐</p>
-						<div class="clearfix">
-							<strong>중미산천문대</strong> <span>수도권에서 1시간 거리에 위치한 중미산천문대는<br>수도권에서
-								가장 많은 별들을 볼 수 있는 곳입니다.
-							</span>
-						</div>
-					</h2>
-				</div>
-				<div class="bg"></div>
-			</div>
+			<%@include file="../Header_bar/Header_bar.jsp" %>
 
 			<div id="skipcon">
 				<div id="sub_contents">
@@ -56,7 +51,7 @@
 							<h3>재관측안내</h3>
 
 							<div class="breadcrumb">
-								<img src="/img/ico/ico_home.png" alt=""><strong>HOME
+								<img src="../img/ico_home.png" alt=""><strong>HOME
 									<span>&gt;</span> 재관측안내
 								</strong>
 							</div>
@@ -140,7 +135,19 @@
 		</div> <!-- sub end -->
 		
 		<!-- FOOTER -->
-		<%@include file="../footer.jsp" %>
+		<%@include file="../Footer/Footer.jsp" %>
 	</div> <!-- wrap end -->
+	<!-- 스크립트 호출 -->
+<script type="text/javascript" src="../Header/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../Header/common.js?ver=181222"></script>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=64j1zgkjuk"></script>
+<script type="text/javascript" src="../Header/slick.min.js"></script>
+<script type="text/javascript" src="../Header/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../Header/common.js"></script>
+<script src="http://www.astrocafe.co.kr/js/jquery.menu.js?ver=171222"></script>
+<script src="http://www.astrocafe.co.kr/js/common.js?ver=171222"></script>
+<script src="http://www.astrocafe.co.kr/js/wrest.js?ver=171222"></script>
+<script src="http://www.astrocafe.co.kr/js/placeholders.min.js"></script>
+	
 </body>
 </html>
