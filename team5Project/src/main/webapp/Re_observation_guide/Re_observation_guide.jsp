@@ -13,6 +13,7 @@
 	<link href="../Headerslick.css" rel="stylesheet">
 	<link href="../Header/style.css" rel="stylesheet">
 	<link href="../Header/default.css" rel="stylesheet">
+	<link href="Re_observation.css" rel="stylesheet">
 </head>
 <body>
 
