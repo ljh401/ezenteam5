@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="Daily_Program.css" rel="stylesheet" >	
+		<link href="Daily_Program.css" rel="stylesheet" >	
 </head>
 <body>
 			
