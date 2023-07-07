@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href = "Main.css" rel = "stylesheet">
 <title>Insert title here</title>
 </head>
 <body>
 
-<<<<<<< HEAD
    <%@include file="../Header/Header.jsp" %>
       
    <div class = "main">
@@ -36,12 +36,29 @@
                </span>
             </a></li>
             <li class="quick4"><a href="#">
-                  <h2>관측대상</h2> <span>바로가기
+                  <h2>날씨 확인하기</h2> <span>바로가기
                </span>
             </a></li>
-            <li class = "quick5"></li>
-            <li class = "quick6"></li>
-         </ul>
+            <li class="quick5"><a href="#">
+                  <h2>재관측 안내</h2> <span>바로가기
+               </span>
+            </a></li>
+            <li class="quick6">
+							<a href="https://talk.naver.com/ct/wc3wsn" target="_blank">
+								<h2>중미산천문대</h2> <span>네이버톡톡 문의하기</span>
+							</a>
+						</li>
+         	</ul>
+         	<div>
+         		<h2>공지사항</h2>
+         		<a href = "#"></a>
+         	</div>
+         	<div>
+         		<ul>
+         			<li><a href = "#"></a>일일 프로그램 필독</li>
+         			<li><a href = "#"></a>일일 프로그램 예약취소, 변경 안내</li>
+         		</ul>
+         	</div>
       </div>
       <div class = "mainImg">
          <div>
