@@ -5,11 +5,12 @@ li{list-style-type: none;}
 #wrap{
 
 	text-align: center;
+	background-color: #D3D3D3;
 	
 }
 #header{
 	background-color: #03c75a;
-	width:100%; height: 55px; 
+	width:100%; 
 	margin: 0 auto;
 }
 
@@ -17,25 +18,81 @@ li{list-style-type: none;}
 	display: flex;
 	width:940px;
 	justify-content: space-between;
-	height: 55px;
 	align-items: center;
 	margin: 0 auto;
+	border-top: 1px solid #00af35;
+	border-bottom:  1px solid #00af35;
 }
+
+/*------------------로고시작-----------------  */
+.mainLogo{
+	background-image: url("../img/naver.logo.svg");
+	background-repeat: no-repeat;
+	width: 51px;
+	height: 11px;
+	
+}
+
+.headerLo{
+	background-image: url("../img/naver.date.png");
+	background-repeat: no-repeat;
+	display: inline-block; width: 21px; height: 27px;
+	background-size:54px;
+	background-position: center; 
+	background-blend-mode: #00c300;
+}
+
+
+
+.headerLogo{
+	background-image:  url("../img/naver.logo2.png");
+	background-repeat: no-repeat;
+    background-size: 27px;
+    display: inline-block;
+    width: 54px; height: 54px;
+    background-position: center;
+    border-left: 1px solid #00af35;
+}
+
+.headerLogos{
+		background-image:  url("../img/naver.logo3.png");
+		background-repeat: no-repeat;
+ 		display: inline-block;
+ 		width: 55px; height: 54px ; background-size: 55px;
+ 		border-left: 1px solid #00af35;
+ 		border-right: 1px solid #00af35;
+}
+
+
+
 
 .logo{
 	display: flex;
 	color: white;
+	height: 55px;
+	align-items: center;
 }
 
 .logo span{
 	margin: 0px 10px;
 }
+/* -------------------------------로고 끝 ----------------*/
+.subimg{
+		background-image:  url("../img/home.jpg");
+		background-repeat: no-repeat;
+ 		display: inline-block;
+ 		background-size: 28px; width: 26px; height: 24px;
+ 		background-position: center;
+}
+
+.headerItem{
+	border-right: 1px solid #00af35;
+}
+
 
 .headerItems{
-	display: flex;
-
-	
-}
+	display: flex;	height: 55px;
+	align-items: center;}
 
 .headerItems li{
 	margin: 0px 10px;
@@ -64,3 +121,136 @@ li{list-style-type: none;}
 	width: 55px;  height: 54px;
 	align-items: center;
 }
+
+
+/*----------------------본문---------------  */
+#form{
+
+	min-height: 313px;
+	margin: 0 auto;
+	width: 940px;
+	background-color: white;
+}
+
+.formImg{
+	background-image:  url("../img/20191027(1).jpg");
+	background-repeat: no-repeat;
+   background-size: 490px;
+    width: 490px;
+    height: 320px;
+}
+
+.topLeft{
+	height: 490px;
+	width: 490px;
+	border: solid 1px #D3D3D3;
+}
+
+.contentTop{
+
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.topItem{
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+
+.topRight{
+	width: 446px; height: 490px;
+}
+.topItems{
+	font-size: 14px;
+	color: #00c73c;
+	margin-top: 10px; 
+}
+.contentBm{
+	display: flex;
+	justify-content: center;
+}
+
+.bmTop{
+	display: flex;
+	margin-top: 20px;
+}
+
+
+
+.bottomLeft{
+	width: 465px ; height: 280px;
+	padding-top: 20px;
+	padding-left: 30px;
+	text-align: left;
+	border: solid 1px #D3D3D3;
+}
+
+.bottomLeft li{
+	font-size: 13px;
+	margin-top: 20px;
+
+}
+
+.bottomRight{
+	width: 451px; height: 300px;
+	
+}
+/*-------------------------ft----------------  */
+#footer{
+	
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.ftTop{
+	display: flex;
+	justify-content: center;
+	background-color: white;
+}
+
+
+.ftTopItem{
+	display: flex;
+	
+
+}
+
+
+.test{
+	width: 940px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.ftBottom{
+	
+	background-color: #D3D3D3;
+	padding-top: 10px;
+	
+}
+
+.ftItem {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
