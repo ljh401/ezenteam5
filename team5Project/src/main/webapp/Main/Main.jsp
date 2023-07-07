@@ -9,11 +9,17 @@
 <body>
 
 	<%@include file="../Header/Header.jsp" %>
-		<p>
-			중미산 메인페이지!!
-		</p>
+		
+	<div>
+		<div></div>
+		<div>
+			<img class = "jimg" />
+		</div>
+		<div></div>
+	</div>
 	<%@include file="../Footer/Footer.jsp" %>
 
-
+	<script src = "Main.js"type="text/javascript"></script>
+	
 </body>
 </html>
