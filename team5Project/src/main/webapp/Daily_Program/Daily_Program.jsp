@@ -72,15 +72,18 @@
 							<button><span>다음단계</span></button>
 						</div>
 					</div>
+					<div class="background">				<!-- 여백  -->
+						
+					</div>
 					
 				
 				</div>																	<!--상단 본문 끝  -->
 				
 				<div id="formBottom">																	<!--하단 본문 시작  -->
 					<div class="bmTop">
-							<div>상세정보</div><div>오시는길</div>	
+							<div class="bmTopItem">상세정보</div><div class="bmTopItem">오시는길</div>	
 					</div>
-					<div>
+					<div class="bmBm">
 						<h3>진행시간</h3>
 						<p>1시간 30분</p>
 						<h3>이용 가능 연령</h3>
@@ -126,49 +129,51 @@
 						</p>
 						<h3>[환불규정]</h3>
 						<p>
-						- 이용 3일전 결제 금액의 20% 차감
-						- 이용 2일전 결제 금액의 30% 차감
-						- 이용 1일전 결제 금액의 40% 차감
+						- 이용 3일전 결제 금액의 20% 차감 <br/>
+						- 이용 2일전 결제 금액의 30% 차감 <br/>
+						- 이용 1일전 결제 금액의 40% 차감 <br/>
 						- 이용 당일 결제 금액의 50% 차감	
 						</p>
 					</div>
-				</div >																	<!-- 하단 본문 끝 -->
 			
+				</div >																	<!-- 하단 본문 끝 -->
+				<div class="bottomSpace">			<!-- 여백  -->
+						
+				</div>
 			
 			
 			</div>																	<!-- form end -->
 			
 			<div id = "footer">													<!--footer start  -->
 				<div class="ftTop">	
-					<div	class="test">															<!--footer top start -->
+					<div class="test">															<!--footer top start -->
 						<div class="ftTopItem">	
-							
-								<div>이미지 </div>
-								<div>예약/주문 스마트봇</div>
+							<div class="ftImg"></div>
+							<div>예약/주문 스마트봇</div>
 						</div>
-						<div class="ftTopItem">
-								<div>이미지</div>
+						<div class="ftTopItems">
+								<div class="ftImgs"></div>
 								<div>예약 소식 받기</div>
-							</div>
+						</div>
 					</div>
 				</div>
 					
 					
 			
 																				<!--footer top end  -->
-			 	<div	class="ftBottom">
+			 	<div class="ftBottom">
 			 		<ul class="ftItem">
-			 			<li>전체서비스</li>
-			 			<li>로그아웃</li>
+			 			<li class="liItem">전체서비스</li>
+			 			<li>로그인</li>
 			 		</ul>
 			 		<ul class="ftItem">
 			 			<li>네이버 예약 고객센터</li>
-			 			<li>이용약관</li>
+			 			<li class="ftItems">이용약관</li>
 			 			<li>개인정보 처리방침</li>
 			 		</ul>
 			 		<p>네이버(주)는 통신판매의 당사자가 아니며, 상품의 정보, 거래조건, 이용 및 환불, 쿠폰 사용 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</p>
 			 		<p>(주)네이버 사업자정보 </p>
-			 		
+			 		<div class="ftLogo"></div>
 			 	
 			 	</div>
 			
