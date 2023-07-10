@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<%@include file="headder.jsp"%>
+	<%@include file="header.jsp"%>
 		<p>
 			중미산 메인페이지
 		</p>

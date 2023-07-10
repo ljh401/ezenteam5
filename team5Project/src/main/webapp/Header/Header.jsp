@@ -25,9 +25,6 @@
 						<li><a href="../Main/Main.jsp" class="bl_n"> HOME
 								&nbsp;&nbsp;</a></li>
 						<li><a href="../Location/Location.jsp">&nbsp;&nbsp; 찾아오시는길</a></li>
-						<li span style="display: none;"><a href=""
-							class="mr0">로그인&nbsp;&nbsp;</a></li>
-
 					</ul>
 				</div>
 			</div>

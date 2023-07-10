@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>중미산 천문대</title>
 
 <!-- 뷰포트 : 반응형 동작 코드  -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
