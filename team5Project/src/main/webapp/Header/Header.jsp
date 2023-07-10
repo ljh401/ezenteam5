@@ -34,7 +34,7 @@
 			<div class="lnbwrap">
 				<div class="maxinner clearfix" style="diplay : flex;">
 					<h1>
-						<a href="../Main/Main.png"><img src="../img/logo.png"
+						<a href="../Main/Main.jsp"><img src="../img/logo.png"
 							alt="하늘아래 첫 언덕, 중미산천문대"></a>
 					</h1>
 					<div class="lnb">
