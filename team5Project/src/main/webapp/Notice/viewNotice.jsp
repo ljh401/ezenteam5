@@ -94,8 +94,7 @@
 									type="button" value="목록보기"></a>
 							</div>
 						</div>
-						<!-- Footer 삽입 -->
-						<%@include file="../Footer/Footer.jsp"%>
+						
 					</div>
 					<!-- sub_conwrap end-->
 				</div>
@@ -106,6 +105,9 @@
 		<!-- sub end -->
 	</div>
 	<!--Wrap end -->
+
+<!-- Footer 삽입 -->
+						<%@include file="../Footer/Footer.jsp"%>
 
 	<!-- 부트스트랩에서 만든 JS 적용 -->
 	<script
