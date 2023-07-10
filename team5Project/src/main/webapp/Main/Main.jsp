@@ -9,7 +9,7 @@
 </head>
 <body>
 
-   <%-- <%@include file="../Header/Header.jsp" %> --%>
+   <%@include file="../Header/Header.jsp" %>
 
    <div class="main">
       <div class="mainImg">
@@ -76,7 +76,7 @@
       </div>
 
    </div>
-   <%--  <%@include file="../Footer/Footer.jsp" %> --%>
+   <%@include file="../Footer/Footer.jsp" %>
 
    <script src="Main.js" type="text/javascript"></script>
 
