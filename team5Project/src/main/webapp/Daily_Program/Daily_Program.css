@@ -1,1 +1,363 @@
-@charset "UTF-8";
+*{padding: 0px; margin: 0px;}
+
+li{list-style-type: none;}
+
+#wrap{
+
+   text-align: center;
+   background-color: #D3D3D3;
+   
+}
+#header{
+   background-color: #03c75a;
+   width:100%; 
+   margin: 0 auto;
+}
+
+#headerTop{
+   display: flex;
+   width:940px;
+   justify-content: space-between;
+   align-items: center;
+   margin: 0 auto;
+   border-top: 1px solid #00af35;
+   border-bottom:  1px solid #00af35;
+}
+
+/*------------------로고시작-----------------  */
+.mainLogo{
+   background-image: url("../img/naver.logo.svg");
+   background-repeat: no-repeat;
+   width: 51px;
+   height: 11px;
+   
+}
+
+.headerLo{
+   background-image: url("../img/naver.date.png");
+   background-repeat: no-repeat;
+   display: inline-block; width: 21px; height: 27px;
+   background-size:54px;
+   background-position: center; 
+   background-blend-mode: #00c300;
+}
+
+
+
+.headerLogo{
+   background-image:  url("../img/naver.logo2.png");
+   background-repeat: no-repeat;
+    background-size: 27px;
+    display: inline-block;
+    width: 54px; height: 54px;
+    background-position: center;
+    border-left: 1px solid #00af35;
+}
+
+.headerLogos{
+      background-image:  url("../img/naver.logo3.png");
+      background-repeat: no-repeat;
+       display: inline-block;
+       width: 55px; height: 54px ; background-size: 55px;
+       border-left: 1px solid #00af35;
+       border-right: 1px solid #00af35;
+}
+
+
+
+
+.logo{
+   display: flex;
+   color: white;
+   height: 55px;
+   align-items: center;
+}
+
+.logo span{
+   margin: 0px 10px;
+}
+/* -------------------------------로고 끝 ----------------*/
+.subimg{
+      background-image:  url("../img/home.jpg");
+      background-repeat: no-repeat;
+       display: inline-block;
+       background-size: 28px; width: 26px; height: 24px;
+       background-position: center;
+}
+
+.headerItem{
+   border-right: 1px solid #00af35;
+}
+
+
+.headerItems{
+   display: flex;   height: 55px;
+   align-items: center;}
+
+.headerItems li{
+   margin: 0px 10px;
+   font-size: 12px;
+   color: white;
+}
+
+#headerBottom{
+   
+   width: 940px;     height: 40px;
+   margin: 0 auto; padding-top: 20px;
+}
+
+.bottomItem{
+   display: flex;
+}
+
+
+.bottomItem li{
+   margin: 0px 10px;
+   
+}
+
+
+.Items{
+   width: 55px;  height: 54px;
+   align-items: center;
+}
+
+
+/*----------------------본문---------------  */
+#form{
+
+   min-height: 313px;
+   margin: 0 auto;
+   width: 940px;
+   background-color: white;
+}
+
+.formImg{
+   background-image:  url("../img/20191027(1).jpg");
+   background-repeat: no-repeat;
+   background-size: 490px;
+    width: 490px;
+    height: 320px;
+}
+
+#formBottom{
+   height: 1350px;
+}
+
+.topLeft{
+   height: 490px;
+   width: 490px;
+   border: solid 1px #D3D3D3;
+}
+
+.contentTop{
+
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.topItem{
+   font-size: 24px;
+   font-weight: bold;
+   margin-top: 20px;
+}
+
+.topRight{
+   width: 446px; height: 490px;
+}
+.topItems{
+   font-size: 14px;
+   color: #00c73c;
+   margin-top: 10px; 
+}
+.contentBm{
+   display: flex;
+   justify-content: center;
+}
+
+.bmTop{
+   display: flex;
+   width: 940px; height: 49px;
+}
+
+
+
+.bottomLeft{
+   width: 465px ; height: 280px;
+   padding-top: 20px;
+   padding-left: 30px;
+   text-align: left;
+   border: solid 1px #D3D3D3;
+}
+
+.bottomLeft li{
+   font-size: 13px;
+   margin-top: 20px;
+
+}
+
+.bottomRight{
+   width: 451px; height: 300px;
+   
+}
+
+.bmTopItem{
+   border: 1px #D3D3D3 solid;
+   width: 148px; height: 20px;
+   font-size: 16px;
+   padding: 15px 0px;
+   text-align: center;
+}
+
+.background{
+   background-color: #D3D3D3;
+   width:940px; height: 30px;
+}
+
+
+
+.bmBm{
+   text-align: left;
+   margin: 40px;
+}
+
+.bmBm *{
+   padding-top: 10px;
+}
+
+.bmBm p{
+   font-size: 13px;
+   padding-bottom: 10px;
+}
+
+.bottomSpace{
+   width: 940px; height: 50px;
+   background-color: #D3D3D3
+}
+
+/*-------------------------ft----------------  */
+#footer{
+   
+   margin: 0 auto;
+   text-align: center;
+}
+
+
+.ftTop{
+   display: flex;
+   justify-content: center;
+   background-color: white;
+   height: 53px; 
+   align-items: center;
+}
+
+
+.ftTopItem{
+   display: flex;
+   align-items: center;
+   
+}
+
+
+.test{
+   width: 1240px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.ftBottom{
+   
+   background-color: #D3D3D3;
+   padding-top: 10px;
+   
+}
+
+.ftItem {
+   display: flex;
+   justify-content: center;  height: 25px;
+   align-items: center;
+}
+
+
+.ftImg{
+   background-image: url("../img/naver.gpt.png"); background-repeat: no-repeat;
+   width: 48px ; height: 33px; background-size: 52px;
+}
+
+.ftImgs{
+   background-image: url("../img/naver.ring.png"); background-repeat: no-repeat;
+   width: 46px; height: 25px; background-size: 47px;
+   
+   background-position: center;
+}
+
+.ftTopItems {
+   display: flex; justify-content: center;
+   align-items: center; border: solid #03C75A 1px;height: 35px;
+   background-color: #03C75A; color: white;
+   border-radius: 10px; 
+}
+
+
+
+.ftBottom{
+   font-size: 13px;
+   padding-top: 20px;
+}
+
+.liItem {
+   margin-right: 20px;
+}
+
+.ftItems {
+   display: flex;
+   justify-content: center;  height: 25px;
+   align-items: center;
+}
+
+.ftItems{
+   margin: 0 20px;
+   border-left: solid 1px #DADEE3;
+   border-right: solid 1px #DADEE3;
+}
+
+.ftBottom p{
+   font-size: 12px; margin-top:10px;
+   color: gray;
+}
+
+.ftLogo{
+   background-image: url("../img/naver.logo.svg");
+   background-repeat: no-repeat;
+   width: 51px; margin : 0 auto;
+   height: 21px; margin-top: 30px;
+   background-size: 49px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
