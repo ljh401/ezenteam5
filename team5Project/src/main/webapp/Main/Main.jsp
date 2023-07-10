@@ -69,7 +69,7 @@
                </a></li>
                <li class="quick6 type2"><a
                   href="https://talk.naver.com/ct/wc3wsn" target="_blank">
-                     <h2>중미산천문대</h2> <span>네이버톡톡 문의하기</span>
+                     <h2 style = "color : white">중미산천문대</h2> <span>네이버톡톡 문의하기</span>
                </a></li>
             </ul>
          </div>

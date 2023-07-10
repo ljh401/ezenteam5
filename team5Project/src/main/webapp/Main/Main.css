@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* style.css */
 
+*{ padding : 0px; margin : 0px;} /* 기본 여백 제거 */
+
 /* 전체 컨테이너 스타일 */
 .main {
   margin : 0 auto;
@@ -88,10 +90,10 @@
 }
 
 .quickmenu h2 {
-   padding: 4px 0 6px;
+   padding: 0px 0 10px;
     font-size: 14px;
     color: #222;
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: -1px;
     line-height: 15px;
 }
@@ -99,9 +101,9 @@
 .quick1 span.icon  {
    display: inline-block;
     position: absolute;
-    left: 64px;
-    top: -10px;
-    padding: 3px 8px;
+    left: 59px;
+    top: -7px;
+    padding: 1px 8px;
     border-radius: 5px;
     background: #1e55a6;
     font-size: 12px;
@@ -121,16 +123,16 @@
 }
 
 .quickmenu > li.type1 > a > h2 {
-   padding: 4px 0 6px;
+   padding: 0px 0 10px;
     font-size: 14px;
     color: #222;
-    font-weight: 500;
+    font-weight: bold;
     letter-spacing: -1px;
     line-height: 15px;
 }
 
 .quickmenu > li.type1.quick1 > a {    border-right: 1px solid #a2a2a2;
-padding: 15px 18px 16px 55px;
+padding: 21px 0 20px 64px;
 background: #fff url(../img/quick1.png) no-repeat 8% center;
 display: block;
 
@@ -138,35 +140,35 @@ display: block;
 }
 
 .quickmenu > li.type1.quick2 > a {    border-right: 1px solid #a2a2a2;
-padding: 15px 18px 16px 55px;
+padding: 21px 0 20px 64px;
 background: #fff url(../img/quick2.png) no-repeat 8% center;
 display: block;
 
 }
 
 .quickmenu > li.type1.quick3 > a {    border-right: 1px solid #a2a2a2;
-padding: 15px 18px 16px 55px;
+padding: 21px 0 20px 64px;
 background: #fff url(../img/quick3.png) no-repeat 8% center;
 display: block;
 
 }
 
 .quickmenu > li.type1.quick4 > a {    border-right: 1px solid #a2a2a2;
-padding: 15px 18px 16px 55px;
+padding: 21px 0 20px 64px;
 background: #fff url(../img/quick4.png) no-repeat 8% center;
 display: block;
 
 }
 
 .quickmenu > li.type1.quick5 > a {    border-right: 1px solid #a2a2a2;
-padding: 15px 18px 16px 55px;
+padding: 21px 0 20px 64px;
 background: #fff url(../img/quick5.png) no-repeat 8% center;
 display: block;
 
 }
 
 .quickmenu > li.type2.quick6 > a {    border-right: 1px solid #a2a2a2;
-padding: 14px 11px 17px 55px;
+padding: 21px 0 20px 64px;
 background: #01c73c url(../img/ico_navertalk_22.png) no-repeat 8% center;
 display: block;
 
@@ -208,7 +210,7 @@ a {
     font-size: 18px;
     color: #fff;
     position : absolute;
-    bottom : 30px;
+    bottom : 35px;
     
 }
 
@@ -226,7 +228,7 @@ a {
     color: #fff;
     font-weight: bold;
     text-decoration: none;
-    bottom: 35px;
+    bottom: 12px;
     
     
 }
@@ -262,6 +264,7 @@ a {
 
 .notice1 h2 {
    font-size: 18px;
+   padding-bottom: 15px;
 }
 
 #speedlink a {
@@ -286,5 +289,6 @@ a {
 
 .oneone1 a , .oneone2 a {
    color : white;
+   font-size: 15px;
 }
 

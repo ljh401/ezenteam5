@@ -13,12 +13,12 @@
 </head>
 <body>
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=xadtduthyv&callback=initMap"></script>
-<%@include file="../Header/Header.jsp" %>
-<div>
+<%-- <%@include file="../Header/Header.jsp" %> --%>
+<div id = "wrap">
     <div class="sub_lnbwrap">
 						<h3>찾아오시는길</h3>
 						<div class="m_menu">
-							<h3 class="hide">하위메뉴보기</h3>
+							
 							<a href="#none"> 찾아오시는길 </a> <span></span>
 						</div>
 						<ul class="sub_lnb">
@@ -30,7 +30,7 @@
 						</div>
 					</div>
     <div class = "location">
-    	<div>
+    	<div class = "title">
     		<h1>찾아오시는길</h1>
     		<img src = "../img/ico_home.png">
     		<p>HOME > 찾아오시는길</p>
@@ -98,7 +98,7 @@
 
 		</div>
 </div>
-<%@include file="../Footer/Footer.jsp" %>
+<%-- <%@include file="../Footer/Footer.jsp" %> --%>
 
 </body>
 </html>
