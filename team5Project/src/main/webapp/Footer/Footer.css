@@ -1,4 +1,5 @@
 @charset "UTF-8";
+<<<<<<< HEAD
 #footer .ft_util { text-align:center;}
 #footer .ft_btm { position:relative; padding:100px 0 30px;}
 #footer .ft_btm .left { float:none;}
@@ -19,4 +20,9 @@
 
 #footer{
 	width: 100%;
+=======
+
+#footer {
+	background-color: #3F3F3F;
+>>>>>>> branch '이진형2' of https://github.com/ljh401/ezenteam5.git
 }
