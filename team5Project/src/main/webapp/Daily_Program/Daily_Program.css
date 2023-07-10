@@ -168,8 +168,8 @@ li{list-style-type: none;}
 }
 .topItems{
    font-size: 14px;
-   color: #00c73c;
-   margin-top: 10px; 
+   color: #00c73c; 	font-weight : bold;
+   margin-top: 10px;  font-size: 15px;
 }
 .contentBm{
    display: flex;
@@ -181,7 +181,80 @@ li{list-style-type: none;}
    width: 940px; height: 49px;
 }
 
+.topLefts{
+	width: 445px; height: 30px;
+	color: #00c73c;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 15px;
+}
 
+
+/*---------------------------------------------달력--------------------------------------  */
+
+
+.calwrap{
+	width: 444px; margin: 0px auto;
+	border: 1px solid #D3D3D3;
+	border-bottom: 1px solid #03C75A  !important;
+}
+/* 캘린더 상단 메뉴 */
+.caltop{
+	display: flex;  	justify-content: center;
+	align-items: center;
+}
+
+/* 캘린더 상단 메뉴 버튼 틀*/
+
+.caltop button{
+	background-color: white;
+	border: none;
+	font-size: 45px; color: gray;
+	cursor: 	pointer;										/* 커서(마우스)모양 설정 */
+}
+/* 캘린더 상단 연도/월 표시*/
+.caltop h3{
+	margin: 0 20px;
+	font-size: 28px;
+}
+
+/* 캘린더 (달력) 구역*/
+.calendar{
+	display: flex;
+	flex-wrap: wrap;		/* 하위 요소의 사이즈가 부족할때 자동 줄바꿈 */
+	margin-bottom: 30px;
+}
+/* 캘린더 한개 구역에 하나의 박스  */
+.calendar div{
+	width: 13%; /* 100% /7 = 14.2 ,0.2는 여백  */
+	height: 37px;	cursor:pointer;
+	text-align: center;
+}
+
+.week{
+	height: 30px !important;	/* css 중복/충돌속성시 최우선순위*/ 
+	font-size: 18px;
+}
+
+.calBm {
+	display: flex;	font-size:12px;
+	align-items: center;
+}
+
+
+.calColor{
+	background-color: #03C75A;
+	width: 15px; height: 15px;
+	margin: 20px;
+}
+
+
+.calColors{
+	background-color: gray;
+	width: 15px; height: 15px;
+	margin: 20px;
+}
+/* -------------------- */
 
 .bottomLeft{
    width: 465px ; height: 280px;
@@ -199,8 +272,8 @@ li{list-style-type: none;}
 
 .bottomRight{
    width: 451px; height: 300px;
-   
-}
+   text-align: left;
+ }
 
 .bmTopItem{
    border: 1px #D3D3D3 solid;
