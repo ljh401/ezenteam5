@@ -1,8 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<head>
+	<link href="../Header/layout.css" rel="stylesheet">
+	<link href="../Header/default.css" rel="stylesheet">"
+	
+</head>
  	<!-- FOOTER -->
-		<div id="footer">
+		<div id="footer" style="height: 229.43px;">
 			<div class="maxinner">
 				<ul class="ft_util">
 					<li class="ml0 bl_n"><a href="/contents/greeting.php">천문대
@@ -35,9 +39,9 @@
 							<!--<li><a href="https://astrocafe.modoo.at/" target="_blank"><img src="/img/ico/ico_sns01.png" alt=""></a></li>
                         <li><a href="https://blog.naver.com/okhak7" target="_blank"><img src="/img/ico/ico_sns02.png" alt=""></a></li>-->
 							<li><a href="https://www.instagram.com/mt.jmobs/"
-								target="_blank"><img src="/img/ico/ico_sns03.png" alt=""></a></li>
+								target="_blank"><img src="../img/ico_sns03.png" alt=""></a></li>
 							<li><a href="http://naver.me/GRSBwzHn" target="_blank"><img
-									src="/img/ico/ico_sns04.png" alt=""></a></li>
+									src="../img/ico_sns04.png" alt=""></a></li>
 						</ul>
 					</div>
 				</div>
