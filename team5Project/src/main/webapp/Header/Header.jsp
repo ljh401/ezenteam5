@@ -8,6 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&amp;subset=korean"rel="stylesheet" type="text/css">
 	<link href="font-awesome.min.css" rel="stylesheet">
 	<link href="slick.css" rel="stylesheet">
+	<link href="layout.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 	<link href="default.css" rel="stylesheet">
 </head>
@@ -17,7 +18,9 @@
 	<!-- HEADER -->
 		<div id="header">
 			<div class="utilmenu">
-				<div class="maxinner clearfix">
+				<div class="maxinner clearfix" style="    display: flex;
+   					 align-items: center;
+   					 justify-content: flex-end;">
 					<ul>
 						<li><a href="../Main/Main.jsp" class="bl_n"> HOME
 								&nbsp;&nbsp;</a></li>
@@ -29,7 +32,7 @@
 				</div>
 			</div>
 			<div class="lnbwrap">
-				<div class="maxinner clearfix">
+				<div class="maxinner clearfix" style="diplay : flex;">
 					<h1>
 						<a href="../Main/Main.png"><img src="../img/logo.png"
 							alt="하늘아래 첫 언덕, 중미산천문대"></a>
@@ -41,48 +44,13 @@
 						</h2>
 						<ul class="clearfix">
 							<li><a href="" class="ml0">천문대소개</a>
-								<ul class="depth">
-									<li><a href="">인사말</a></li>
-									<li><a href="">시설소개</a>
-										<ul class="sub_depth">
-											<li><a href="">장비안내</a></li>
-											<li><a href="">숙소소개</a></li>
-										</ul></li>
-								</ul></li>
-							<li><a
-								href="https://booking.naver.com/booking/12/bizes/233651/items/3056171"
-								target="_blank" title="새창열기">일일프로그램</a></li>
+							<li><a href="https://booking.naver.com/booking/12/bizes/233651/items/3056171" target="_blank" title="새창열기">일일프로그램</a></li>
 							<li><a href="../Team_program/Team_program.jsp">단체프로그램</a>
-								<ul class="depth">
-									<li><a href="../Team_program/Team_program.jsp">학교 및 기타단체</a>
-										<ul class="sub_depth">
-											<li><a href="../Team_program/Team_program.jsp">1박2일 프로그램</a></li>
-											<li><a href="">밤 프로그램</a></li>
-											<li><a href="">낮 프로그램</a></li>
-										</ul></li>
-									<!--<li><a href="/contents/group.php">신청 및 확인</a></li>-->
-									<li><a href="">참가신청</a></li>
-									<li><a href="">참가신청확인</a></li>
-								</ul></li>
-
 							<li><a href="../Re_observation_guide/Re_observation_guide.jsp">재관측안내</a></li>
-							<li><a href="../Notice/Notice.jsp">공지사항</a>
-								<ul class="depth">
-									<li><a href="../Notice/Notice.jsp">공지사항</a></li>
-									<li><a href="">관측대상/일정</a></li>
-									<li><a href="">이벤트</a></li>
-								</ul></li>
+							<li><a href="../Notice/Notice.jsp">공지사항</a></li>
 							<li><a href="../Location/Location.jsp" class="mr0">찾아오시는길</a></li>
-
 						</ul>
 					</div>
-				</div>
-			</div>
-			<div class="nav_toggle">
-				<h2 class="hide">모바일 메뉴열기</h2>
-				<div class="navbar-toggle">
-					<span class="icon-bar i-bar01"></span> <span
-						class="icon-bar i-bar02"></span> <span class="icon-bar i-bar03"></span>
 				</div>
 			</div>
 		</div> <!-- header end -->

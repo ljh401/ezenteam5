@@ -40,6 +40,7 @@
 
 					<!-- SUB MENU -->
 					<div class="sub_lnbwrap">
+					
 						<h3>공지사항</h3>
 						<div class="m_menu">
 							<h3 class="hide">하위메뉴보기</h3>
@@ -167,15 +168,15 @@
 							</form>
 						</div> <!-- bo_list end -->
 						
-							<!-- FOOTER 삽입 -->
-						<%@include file="../Footer/Footer.jsp"%>
+						
 						
 					</div><!-- sub_conwrap end-->
 				</div><!-- sub_contents end-->
 			</div><!-- skipcon end -->
 		</div><!-- sub end -->
 	</div> <!--Wrap end -->
-
+	<!-- FOOTER 삽입 -->
+<%@include file="../Footer/Footer.jsp"%>
 
 
 	<!--  JS 추가 -->
