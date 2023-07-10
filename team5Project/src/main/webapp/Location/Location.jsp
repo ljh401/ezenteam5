@@ -13,7 +13,7 @@
 </head>
 <body>
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=xadtduthyv&callback=initMap"></script>
-<%-- <%@include file="../Header/Header.jsp" %> --%>
+<%@include file="../Header/Header.jsp" %> 
 <div id = "wrap">
     <div class="sub_lnbwrap">
 						<h3>찾아오시는길</h3>
@@ -98,7 +98,7 @@
 
 		</div>
 </div>
-<%-- <%@include file="../Footer/Footer.jsp" %> --%>
+<%@include file="../Footer/Footer.jsp" %>
 
 </body>
 </html>
