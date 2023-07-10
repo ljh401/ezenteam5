@@ -72,7 +72,7 @@
 							<h3>공지사항</h3>
 
 							<div class="breadcrumb">
-								<img src="/img/ico/ico_home.png" alt=""><strong>HOME
+								<img style="width : 17px; height : 14px" src="../img/ico_home.png" alt=""><strong>HOME
 									<span>&gt;</span> 공지사항
 								</strong>
 							</div>
