@@ -83,10 +83,13 @@ li{list-style-type: none;}
        display: inline-block;
        background-size: 28px; width: 26px; height: 24px;
        background-position: center;
+	    background-color: transparent !important;
 }
 
 .headerItem{
    border-right: 1px solid #00af35;
+   
+   
 }
 
 
@@ -263,7 +266,7 @@ li{list-style-type: none;}
 
 
 .checkIn{
-	text-align: left;
+	text-align: center;
 	font-size: 16px;
     padding: 20px;
     font-weight: bold;
@@ -316,7 +319,7 @@ li{list-style-type: none;}
 } 
 .bmTopItem{
    border: 1px #D3D3D3 solid;
-   width: 148px; height: 20px;
+   width: 940px; height: 20px;
    font-size: 16px;
    padding: 15px 0px;
    text-align: center;

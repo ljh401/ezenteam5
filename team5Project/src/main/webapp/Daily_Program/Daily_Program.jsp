@@ -130,7 +130,6 @@
 				<!--하단 본문 시작  -->
 				<div class="bmTop">
 					<div  class="bmTopItem">상세정보</div>
-					<div class="bmTopItem">오시는길</div>
 				</div>
 				<div class="bmBm">
 					<h3>진행시간</h3>
