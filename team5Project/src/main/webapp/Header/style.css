@@ -284,11 +284,7 @@ input:focus + label {
 .location dl dd p { padding:3px 0 0; color:#e93700;}
 .location dl dd ul { font-size:0;}
 .location dl dd ul li { display:inline-block; margin-right:15px; padding:45px 0 0; min-width:50px; font-size:15px; text-align: center;}
-.location dl dd ul li.ico01 { background:url(/img/ico/ico_reservation.png) no-repeat top center; }
-.location dl dd ul li.ico02 { background:url(/img/ico/ico_group.png) no-repeat top center; }
-.location dl dd ul li.ico03 { background:url(/img/ico/ico_parking.png) no-repeat top center; }
-.location dl dd ul li.ico04 { background:url(/img/ico/ico_wifi.png) no-repeat top center; }
-.location dl dd ul li.ico05 { background:url(/img/ico/ico_toilet.png) no-repeat top center; }
+
 
 
 

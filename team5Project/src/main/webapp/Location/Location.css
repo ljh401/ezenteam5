@@ -1,19 +1,20 @@
 @charset "UTF-8";
 *{ 
-	list-style : none;
-	padding : 0px; margin : 0px;
+   list-style : none;
+   padding : 0px; margin : 0px;
 } /* 기본 여백 제거 */
 
 #wrap {
-	position: relative;
+   position: relative;
     margin: 1px auto 0;
     width: 1200px;
     display : flex;
     justify-content: space-between;
+    height: 1263px;
 }
 
 .title {
-	    position: relative;
+       position: relative;
     margin-bottom: 50px;
     border-bottom: 1px solid #c8d1db;
     display: flex;
@@ -24,13 +25,13 @@
 }
 
 .img_title {
-	justify-content: flex-end;
-	display : flex;
-	align-items: center;
+   justify-content: flex-end;
+   display : flex;
+   align-items: center;
 }
-	
+   
 .sub_lnbwrap  > h3 {
-	    position: relative;
+       position: relative;
     padding: 35px 0 25px;
     background: #007ae9 url(../img/bg_submenu_tit.jpg) no-repeat left center;
     font-size: 28px;
@@ -41,14 +42,14 @@
 }
 
 .sub_lnbwrap {
-	position: absolute;
+
     left: 0;
     top: 0;
     width: 260px;
 }
 
 .m_menu p {
-	background: #183867 url(../img/bg_submenu_list.jpg) no-repeat right center;
+   background: #183867 url(../img/bg_submenu_list.jpg) no-repeat right center;
     color: #fff;
     display: block;
     position: relative;
@@ -58,9 +59,12 @@
 
 }
 
+.sub_lnb > li > a {
+   background: #183867 url(/img/common/bg_submenu_list.jpg) no-repeat right center;
+}
 
 .minbanner a {
-	   border-right: 1px solid #a2a2a2;
+
 padding: 21px 0 20px 64px;
 background: #01c73c url(../img/ico_navertalk_22.png) no-repeat 8% center;
 display: block;
@@ -68,7 +72,7 @@ display: block;
 }
 
 .subtitle {
-	display: inline-block;
+   display: inline-block;
     position: relative;
     padding: 40px 0 20px;
     font-size: 32px;
@@ -79,7 +83,7 @@ display: block;
 }
 
 .btnarea a {
-	padding: 0 30px;
+   padding: 0 30px;
     width: auto !important;
     background: #1e77c7;
     border: 1px solid #125da0;
@@ -91,16 +95,16 @@ display: block;
 }
 
 .area {
-	display : flex;
-	justify-content: space-between;
-	border-bottom: 1px dashed #ccc;
-	position: relative;
+   display : flex;
+   justify-content: space-between;
+   border-bottom: 1px dashed #ccc;
+   position: relative;
     padding-bottom: 20px;
     margin: 20px 0;
 }
 
 .area p {
-	font-size: 23px;
+   font-size: 23px;
     color: #126dbf;
     line-height: 30px;
     letter-spacing: -0.5px;
@@ -108,12 +112,43 @@ display: block;
 }
 
 .area span {
-	font-size: 16px;
+   font-size: 16px;
     color: #555;
     letter-spacing: -0.5px;
 }
 
 .map_btn {
-	display: inline-block !important;
-	    margin-top: 10px;
+   display: inline-block !important;
+       margin-top: 10px;
+}
+
+.ico01 {
+   background: url(../img/ico_reservation.png) no-repeat top center;
+}
+.ico02 {
+   background: url(../img/ico_group.png) no-repeat top center;
+}
+.ico03 {
+   background: url(../img/ico_wifi.png) no-repeat top center;
+}
+.ico04 {
+   background: url(../img/ico_toilet.png) no-repeat top center;
+}
+
+
+.parkbtn {
+   border: 1px solid #ddd;
+    padding: 1px 6px 1px 6px;
+}
+
+.parking {
+   border: 1px solid #ddd;
+    padding: 1px 6px 1px 6px;
+}
+.parkingInfo {
+	    margin-left: 200px;
+} 
+
+.park_wrap {
+	display: flex;
 }
