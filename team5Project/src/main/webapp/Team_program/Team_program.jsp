@@ -25,30 +25,31 @@
 	 <div class="wrap"><!-- 전체페이지 시작 -->
 	 	
 	 	<div class="sideMenu"> <!-- 사이드메뉴 시작 -->
-	 		<div class=""><!-- 단체프로그램 메뉴 -->
-	 		
-	 		
-	 		</div>
+	 		<div class="sideTeam"><!-- 단체프로그램 메뉴 -->
+		 		<div class="sideLine"></div>
+		 			<h3>단체프로그램</h3>
+		 		</div>
 	 		<div><!-- 사이드 리스트 메뉴 -->
-	 		<ol>
-	 			<li></li>
 	 		
-	 		</ol>
 	 		
 	 		<ul class="listStyle">
-	 			<a href="Team_program.jsp"><li>참가신청</li></a>
-	 			<a href="Team_program_check.jsp"><li>참가신청확인</li></a>
-	 		
+	 			<a href="Team_program.jsp"><span><h3 class="headText">신청 및 확인<span class="arrow"></span></h3></span></a>
+	 			<li><a href="Team_program.jsp"><span class="makerImg"></span>참가신청</a></li>
+	 			<li><a href="Team_program_check.jsp"><span class="makerImg"></span>참가신청확인</a></li>
 	 		</ul>
 	 		
 	 		</div>
 	 		
-	 		<div><!-- 사이드 메뉴 네이버톡톡 -->
-	 		
-	 		
-	 		</div>
-	 	
-	 	
+	 		<a href="https://talk.naver.com/ct/wc3wsn"><div class="navertalk"><!-- 사이드 메뉴 네이버톡톡 -->
+	 			<div>
+		 			<img class="talkImg"src="../img/ico_navertalk.png">
+		 		</div>
+		 			
+		 		<div class="talkText">
+		 			<h3>중미산천문대</h3>
+		 			<h4>네이버톡톡 문의하기</h4>
+		 		</div>
+	 		</div></a>
 	 	
 	 	</div> <!-- 사이드메뉴 종료 -->
 	 	<div class="main_content"> <!-- 메인컨텐츠 시작 -->

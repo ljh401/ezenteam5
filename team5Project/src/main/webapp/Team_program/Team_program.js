@@ -43,5 +43,8 @@ function teamSubmit(){
 							}
 		teamIfo.push(personnelInfo)
 		
-	sessionStorage.setItem('submitInfo',JSON.stringify(teamIfo))
+	localStorage.setItem('submitInfo',JSON.stringify(teamIfo))
+	alert('예약이 완료되었습니다.')
+	location = "Team_program.jsp"
+	
 }
