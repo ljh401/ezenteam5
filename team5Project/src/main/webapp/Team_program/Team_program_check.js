@@ -1,12 +1,14 @@
-teamInfo = JSON.parse(localStorage.getItem('submitInfo'))
 let x = 0;
 console.log(teamInfo)
 function submitCheck(){
 	teamInfo = JSON.parse(localStorage.getItem('submitInfo'))
-	if(teamInfo.length == 0){
-		alert('예약 정보를 찾을 수 없습니다.')
+	console.log(teamInfo.length)
+	if(teamInfo == null) {
+	teamInfo = [];
+	alert('예약 정보를 찾을 수 없습니다.')
 		return;
 	}
+	
 	
 	let nameCheck = document.querySelector('.nameCheck').value
 	let passCheck = document.querySelector('.passCheck').value
@@ -18,7 +20,7 @@ function submitCheck(){
 	}
 	
 	for(let i=0; i<teamInfo.length; i++){
-	if(teamInfo[i].name != nameCheck ||
+	if(teamInfo[i].name != nameCheck &&
 		teamInfo[i].password != passCheck){
 			alert('예약 정보를 찾을 수 없습니다.')
 			return;

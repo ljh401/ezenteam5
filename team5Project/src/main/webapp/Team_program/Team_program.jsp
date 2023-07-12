@@ -6,6 +6,12 @@
 <meta charset="UTF-8">
 <title>중미산천문대</title>
 	<link href="Team_program.css" rel="stylesheet">
+	<link href="http://www.astrocafe.co.kr/css/default.css?ver=171222"rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&amp;subset=korean" rel="stylesheet" type="text/css">
+	<link href="../Headerfont-awesome.min.css" rel="stylesheet">
+	<link href="../Headerslick.css" rel="stylesheet">
+	<link href="../Header/style.css" rel="stylesheet">
+	<link href="../Header/default.css" rel="stylesheet">
 	
 	<!-- 제이쿼리 입력 폼 -->
 	<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" /> 
@@ -13,10 +19,8 @@
 </head>
 <body>
 
-	
-<%@include file="../Header/Header.jsp" %>
-<%@include file="../Header_bar/Header_bar.jsp" %>
-
+<%@include file="../Header/Header.jsp" %>  
+<%@include file="../Header_bar/Header_bar.jsp" %> 
 	 
 	<form>
 	 <div class="wrap"><!-- 전체페이지 시작 -->
@@ -27,16 +31,12 @@
 		 			<h3>단체프로그램</h3>
 		 		</div>
 	 		<div><!-- 사이드 리스트 메뉴 -->
-	 		
-	 		
-	 		<ul class="listStyle">
-	 			<a href="Team_program.jsp"><span><h3 class="headText">신청 및 확인<span class="arrow"></span></h3></span></a>
-	 			<li><a href="Team_program.jsp"><span class="makerImg"></span>참가신청</a></li>
-	 			<li><a href="Team_program_check.jsp"><span class="makerImg"></span>참가신청확인</a></li>
-	 		</ul>
-	 		
+		 		<ul class="listStyle">
+		 			<a href="Team_program.jsp"><span><h3 class="headText">신청 및 확인<span class="arrow"></span></h3></span></a>
+		 			<li><a href="Team_program.jsp"><span class="makerImg"></span>참가신청</a></li>
+		 			<li><a href="Team_program_check.jsp"><span class="makerImg"></span>참가신청확인</a></li>
+		 		</ul>
 	 		</div>
-	 		
 	 		<a href="https://talk.naver.com/ct/wc3wsn"><div class="navertalk"><!-- 사이드 메뉴 네이버톡톡 -->
 	 			<div>
 		 			<img class="talkImg"src="../img/ico_navertalk.png">

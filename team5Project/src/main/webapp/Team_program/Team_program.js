@@ -11,6 +11,9 @@ $(function() {
 
 
 function teamSubmit(){
+	teamInfo = JSON.parse(localStorage.getItem('submitInfo'))
+	if(teamInfo == null) { teamInfo = [];}
+	
 	if(document.querySelector('input[name=student]:checked') == undefined || 
   	document.querySelector('input[name=slot]:checked') == undefined)
   	{alert('정보를 모두 기입해 주세요.');return;}
@@ -62,6 +65,7 @@ function teamSubmit(){
 	teamInfo.push(personnelInfo)
 		
 	localStorage.setItem('submitInfo',JSON.stringify(teamInfo))
+	
 	alert('예약이 완료되었습니다.')
 	location = "Team_program.jsp"
 	
