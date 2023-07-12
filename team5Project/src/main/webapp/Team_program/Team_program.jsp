@@ -14,7 +14,7 @@
 <body>
 
 	
- <%@include file="../Header/Header.jsp" %> 헤더 링크 
+<%@include file="../Header/Header.jsp" %> 헤더 링크 
 <%@include file="../Header_bar/Header_bar.jsp" %> 헤더 바 링크
 
 
@@ -25,21 +25,31 @@
 	 <div class="wrap"><!-- 전체페이지 시작 -->
 	 	
 	 	<div class="sideMenu"> <!-- 사이드메뉴 시작 -->
-	 		<div class=""><!-- 단체프로그램 메뉴 -->
-	 		
-	 		
-	 		</div>
+	 		<div class="sideTeam"><!-- 단체프로그램 메뉴 -->
+		 		<div class="sideLine"></div>
+		 			<h3>단체프로그램</h3>
+		 		</div>
 	 		<div><!-- 사이드 리스트 메뉴 -->
 	 		
 	 		
+	 		<ul class="listStyle">
+	 			<a href="Team_program.jsp"><span><h3 class="headText">신청 및 확인<span class="arrow"></span></h3></span></a>
+	 			<li><a href="Team_program.jsp"><span class="makerImg"></span>참가신청</a></li>
+	 			<li><a href="Team_program_check.jsp"><span class="makerImg"></span>참가신청확인</a></li>
+	 		</ul>
+	 		
 	 		</div>
 	 		
-	 		<div><!-- 사이드 메뉴 네이버톡톡 -->
-	 		
-	 		
-	 		</div>
-	 	
-	 	
+	 		<a href="https://talk.naver.com/ct/wc3wsn"><div class="navertalk"><!-- 사이드 메뉴 네이버톡톡 -->
+	 			<div>
+		 			<img class="talkImg"src="../img/ico_navertalk.png">
+		 		</div>
+		 			
+		 		<div class="talkText">
+		 			<h3>중미산천문대</h3>
+		 			<h4>네이버톡톡 문의하기</h4>
+		 		</div>
+	 		</div></a>
 	 	
 	 	</div> <!-- 사이드메뉴 종료 -->
 	 	<div class="main_content"> <!-- 메인컨텐츠 시작 -->
@@ -63,18 +73,18 @@
 	 		<div class="main_content_3">
 	 			
 	 			<div><span class="typeText">참가구분</span><span>
-	 				<span class="checkButton1"><input type="radio" name="student"> 유치원</span>
-	 				<span class="checkButton1"><input type="radio" name="student"> 초등학생</span>
-	 				<span class="checkButton1"><input type="radio" name="student"> 중/고등학생</span>
-	 				<span class="checkButton1"><input type="radio" name="student"> 학교외 단체</span>
+	 				<span class="checkButton1"><input type="radio" name="student" value="kind"> 유치원</span>
+	 				<span class="checkButton1"><input type="radio" name="student" value="elem"> 초등학생</span>
+	 				<span class="checkButton1"><input type="radio" name="student" value="mihi"> 중/고등학생</span>
+	 				<span class="checkButton1"><input type="radio" name="student" value="ohter"> 학교외 단체</span>
 	 			</span></div>
 	 			
 	 			
 	 			<div><span class="typeText">프로그램 선택</span><span>
-	 				<span class="checkButton1"><input type="radio" name="slot"> 낮</span>
-	 				<span class="checkButton1"><input type="radio" name="slot"> 밤</span>
-	 				<span class="checkButton1"><input type="radio" name="slot"> 종일</span>
-	 				<span class="checkButton1"><input type="radio" name="slot"> 1박2일</span>
+	 				<span class="checkButton1"><input type="radio" name="slot" value="after"> 낮</span>
+	 				<span class="checkButton1"><input type="radio" name="slot" value="night"> 밤</span>
+	 				<span class="checkButton1"><input type="radio" name="slot" value="daily"> 종일</span>
+	 				<span class="checkButton1"><input type="radio" name="slot" value="2day"> 1박2일</span>
 	 			</span></div>
 	 			
 	 		
@@ -91,45 +101,45 @@
 	 		
 	 		<div class="main_content_4">
 	 			<div><span class="typeText">신청인 성명 *</span><span>
-	 				<input id="inputBox1" type="text">
+	 				<input id="inputBox1" class="uid" type="text">
 	 			</span></div>
 	 			
 	 			<div><span class="typeText">비밀번호 *</span><span>
-	 				<input id="inputBox2" type="password"></span>
+	 				<input class="pass" id="inputBox2" type="password"></span>
 	 				<div id="m_div4"><span class="typeText2"></span>
 	 					<span>* 참가신청확인시 사용할 비밀번호 4자리를 입력해주세요.</span>
 		 			</div>
 	 			</div>
 	 			
 	 			<div><span class="typeText">연락처 *</span><span>
-	 				<input id="inputBox2" type="text"> - 
-	 				<input id="inputBox2" type="text"> - 
-	 				<input id="inputBox2" type="text"></span>
+	 				<input class="tel1" id="inputBox2" type="text"> - 
+	 				<input class="tel2" id="inputBox2" type="text"> - 
+	 				<input class="tel3" id="inputBox2" type="text"></span>
 	 				<div id="m_div4"><span class="typeText2"></span>
 	 					<span>* 프로그램 관련 실무담당자 연락처를 정확하게 기입해 주세요.</span>
 		 			</div>
 	 			</div>
 	 			
 	 			<div class="m_div2"><span class="typeText">단체(학교)명 *</span><span>
-	 				<input id="inputBox3" type="text">
+	 				<input class="school" id="inputBox3" type="text">
 	 			</span></div>
 	 			
 	 			<div class="m_div2"><span class="typeText">단체유형 *</span><span>
-	 				<input id="inputBox3" type="text">
+	 				<input class="category" id="inputBox3" type="text">
 	 			</span></div>
 	 			
 	 			<div class="m_div2"><span class="typeText">이메일 *</span><span>
-	 				<input id="inputBox3" type="text">
+	 				<input class="email" id="inputBox3" type="text">
 	 			</span></div>
 	 			
 	 			<div class="m_div2"><span class="typeText">참가인원 *</span><span>
-	 				<input id="inputBox2" type="text">
+	 				<input class="personnel" id="inputBox2" type="text">
 	 			</span></div>
 	 			
 	 			<div><span class="typeText">참가인원 상세 *</span><span>
-	 				<span class="s_div2">교사: <input id="inputBox4" type="text"> 명</span>
-		 			<span class="s_div2">남학생: <input id="inputBox4" type="text"> 명</span>
-		 			<span class="s_div2">여학생 <input id="inputBox4" type="text"> 명</span></span>
+	 				<span class="s_div2">교사: <input class="teacherNum" id="inputBox4" type="text"> 명</span>
+		 			<span class="s_div2">남학생: <input class="maleNum" id="inputBox4" type="text"> 명</span>
+		 			<span class="s_div2">여학생 <input class="femaleNum" id="inputBox4" type="text"> 명</span></span>
 		 			<div id="m_div4"><span class="typeText2"></span>
 		 				<span>* 대략적인 인원을 작성해 주시고, 인원 변동이 생길 경우 사전에 연락 주시기 바랍니다.</span>
 		 			</div>
@@ -137,7 +147,7 @@
 	 		</div>
 	 		
 	 		<div class="sub_div">
-	 			<button class="simbit" type="button">작성완료</button>
+	 			<button onclick="teamSubmit()" class="sumbit" type="button">작성완료</button>
 	 		</div>
 	 	
 	 	</div> <!-- 메인컨텐츠 종료 -->
