@@ -29,7 +29,8 @@ function boardPrint(){
 							</div>
 					</td> 
 					<td class="td_name sv_use"> <span class="sv_member"> ${ board.writer } </span></td>
-					 <td class="td_num"> ${ board.view } </td> <td class="td_datetime"> ${ board.date } </td> 
+					<td class="td_num"> ${ board.view } </td>
+					<td class="td_datetime">${(new Date(board.date).getMonth() + 1).toString().padStart(2, '0')}-${new Date(board.date).getDate().toString().padStart(2, '0')}</td> 
 				</tr>`
 		}
 	// 3. 대입
