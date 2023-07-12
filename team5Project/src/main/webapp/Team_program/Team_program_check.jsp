@@ -7,6 +7,15 @@
 <title>중미산 천문대</title>
 
 <link href="Team_program_check.css" rel="stylesheet">
+<link href="http://www.astrocafe.co.kr/css/default.css?ver=171222"
+	rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&amp;subset=korean"
+	rel="stylesheet" type="text/css">
+<link href="../Headerfont-awesome.min.css" rel="stylesheet">
+<link href="../Headerslick.css" rel="stylesheet">
+<link href="../Header/style.css" rel="stylesheet">
+<link href="../Header/default.css" rel="stylesheet">
 
 	
 	<!-- 제이쿼리 입력 폼 -->
@@ -14,12 +23,11 @@
 </head>
 <body>
 
-<%@include file="../Header/Header.jsp" %> 헤더 링크 
-<%@include file="../Header_bar/Header_bar.jsp" %> 헤더 바 링크
+<%@include file="../Header/Header.jsp" %> 
+<%@include file="../Header_bar/Header_bar.jsp" %> 
 
 
-<div>헤더 영역</div>
-<div>헤더바</div>
+
 	 
 	<form>
 	 <div class="wrap"><!-- 전체페이지 시작 -->
@@ -90,8 +98,8 @@
 	</div> <!-- 전체페이지 종료 -->
 	</form> 
 		
- <%@include file="../Footer/Footer.jsp" %> 푸터링크
-<div>푸터 영역</div>
+ <%@include file="../Footer/Footer.jsp" %> 
+
 	
 	<!-- 제이쿼리 입력폼 스크립트 호출 -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 

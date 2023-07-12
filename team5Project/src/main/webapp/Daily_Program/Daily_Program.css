@@ -71,9 +71,6 @@ li{list-style-type: none;}
        border-right: 1px solid #00af35;
 }
 
-
-
-
 .logo{
    display: flex;
    color: white;
@@ -96,7 +93,6 @@ li{list-style-type: none;}
 
 .headerItem{
    border-right: 1px solid #00af35;
-   
    
 }
 
@@ -124,7 +120,6 @@ li{list-style-type: none;}
 
 .bottomItem li{
    margin: 0px 10px;
-   
 }
 
 
@@ -204,12 +199,7 @@ li{list-style-type: none;}
     margin-top: 10px;
     font-size: 15px;
 }
-
-
 /*---------------------------------------------달력--------------------------------------  */
-
-
-
 .calwrap{
 	width: 444px; margin: 0px auto;
 	border: 1px solid #D3D3D3;
@@ -387,12 +377,6 @@ li{list-style-type: none;}
 .phone input{
 	width: 267px;
 }
-
-
-
-
-
-
 
 .name input{
 	width: 260px;

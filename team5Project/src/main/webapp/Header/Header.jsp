@@ -41,11 +41,11 @@
 						</h2>
 						<ul class="clearfix">
 							<li><a href="" class="ml0">천문대소개</a>
-							<li><a href="https://booking.naver.com/booking/12/bizes/233651/items/3056171" target="_blank" title="새창열기">일일프로그램</a></li>
-							<li><a href="../Team_program/Team_program.jsp">단체프로그램</a>
-							<li><a href="../Re_observation_guide/Re_observation_guide.jsp">재관측안내</a></li>
-							<li><a href="../Notice/Notice.jsp">공지사항</a></li>
-							<li><a href="../Location/Location.jsp" class="mr0">찾아오시는길</a></li>
+							<li><a href="/team5Project/Daily_Program/Daily_Program.jsp" target="_blank" title="새창열기">일일프로그램</a></li>
+							<li><a href="/team5Project/Team_program/Team_program.jsp">단체프로그램</a>
+							<li><a href="/team5Project/Re_observation_guide/Re_observation_guide.jsp">재관측안내</a></li>
+							<li><a href="/team5Project/Notice/Notice.jsp">공지사항</a></li>
+							<li><a href="/team5Project/Location/Location.jsp" class="mr0">찾아오시는길</a></li>
 						</ul>
 					</div>
 				</div>
