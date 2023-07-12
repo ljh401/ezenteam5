@@ -5,11 +5,11 @@ li{list-style-type: none;}
 #wrap{
 
    text-align: center;
-   background-color: #D3D3D3;
+   background-color: #f3f3f3;
    
 }
 #header{
-   background-color: #03c75a;
+   background-color: #00c300;
    width:100%; 
    margin: 0 auto;
 }
@@ -42,7 +42,15 @@ li{list-style-type: none;}
    background-position: center; 
 }
 
-
+.hdLogo{
+	background-image: url("../img/naver.logo4.png");
+	background-repeat: no-repeat;
+    background-size: 27px;
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    background-position: center;
+}
 
 .headerLogo{
    background-image:  url("../img/naver.logo2.png");
@@ -307,11 +315,15 @@ li{list-style-type: none;}
  }
 
 .sunday{
-	color:red;
+	color:red !important;
 	
 }
 .saturday{
-	color:blue;
+	color:blue !important;
+}
+
+.disabled{
+	color: #808080 !important;
 }
 .buttonBox span{
 	font-weight: bold; 
@@ -326,7 +338,7 @@ li{list-style-type: none;}
 }
 
 .background{
-   background-color: #D3D3D3;
+   background-color: #f3f3f3;
    width:940px; height: 30px;
 }
 
@@ -348,7 +360,7 @@ li{list-style-type: none;}
 
 .bottomSpace{
    width: 940px; height: 50px;
-   background-color: #D3D3D3
+   background-color: #f3f3f3
 }
 
 
@@ -417,7 +429,7 @@ li{list-style-type: none;}
 
 .ftBottom{
    
-   background-color: #D3D3D3;
+   background-color: #f3f3f3;
    padding-top: 10px;
    
 }

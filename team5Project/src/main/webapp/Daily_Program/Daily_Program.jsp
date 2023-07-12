@@ -27,7 +27,7 @@
 						<li>차정훈</li>
 						<li><span class="headerLogo"></span></li>
 						<li><span class="headerLogos"></span></li>
-						<li>로고</li>
+						<li><span  class="hdLogo"></span></li> 
 					</ul>
 				</div>
 			</div>

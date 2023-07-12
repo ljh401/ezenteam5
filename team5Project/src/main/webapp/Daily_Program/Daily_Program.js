@@ -3,7 +3,8 @@
       //.getFullYear (),
 let year = new Date().getFullYear();             //현재 연도
 let month = new Date().getMonth()+1;         //현재 월(0~11)+1
-let day= new Date().getDay();
+let day= new Date().getDate();
+console.log(day)
 
 let contents = [] // 여러개 일정객체를 등록하는 배열
 let checkIn =[]       //예약자 배열
@@ -40,16 +41,20 @@ function calPrint(){
             for (let day = 1; day <= eDay; day++) {         //for start
            const clickedDate = new Date(year, month - 1, day);
            const dayOfWeek = clickedDate.getDay();
-           
+           if(clickedDate<new Date ()){					//현재 날짜와 달력에 있는 날짜 비교하기
+			   html+=`<div class="day disabled" >${day}${contentPrint(`${year}-${month}-${day}`)}</div>`
+			  
+		   }else{
            if (dayOfWeek === 0 ) { // 0=일요일 일요일이 맞을때
              html += `<div class="day sunday" onclick="openPrint(${day})">${day}${contentPrint(`${year}-${month}-${day}`)}</div>`;
               } 
                  else if( dayOfWeek === 6){   //6=토요일 툐요일이 맞을때 
                     html +=`<div class="day saturday" onclick="openPrint(${day})">${day}${contentPrint(`${year}-${month}-${day}`)}</div>`
                  }
-                    else {
+                    else {				//평일 일때 
              html += `<div class="day" onclick="openPrint(${day})">${day}${contentPrint(`${year}-${month}-${day}`)}</div>`;
                     }
+             }     
          }               //for end
          
       calendar.innerHTML = html;
