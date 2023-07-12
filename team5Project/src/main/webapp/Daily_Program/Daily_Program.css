@@ -35,11 +35,11 @@ li{list-style-type: none;}
 
 .headerLo{
    background-image: url("../img/naver.date.png");
+   background-color: transparent;
    background-repeat: no-repeat;
    display: inline-block; width: 21px; height: 27px;
    background-size:54px;
    background-position: center; 
-   background-blend-mode: #00c300;
 }
 
 
@@ -162,7 +162,12 @@ li{list-style-type: none;}
    font-weight: bold;
    margin-top: 20px;
 }
-
+.inputText{
+	 font-size: 14px;
+   color: #00c73c; 	font-weight : bold;
+   margin-top: 10px;  font-size: 15px;
+   
+}
 .topRight{
    width: 446px; height: 490px;
 }
@@ -191,6 +196,7 @@ li{list-style-type: none;}
 
 
 /*---------------------------------------------달력--------------------------------------  */
+
 
 
 .calwrap{
@@ -254,6 +260,16 @@ li{list-style-type: none;}
 	width: 15px; height: 15px;
 	margin: 20px;
 }
+
+
+.checkIn{
+	text-align: left;
+	font-size: 16px;
+    padding: 20px;
+    font-weight: bold;
+    border: 1px solid #D3D3D3;
+    border-top:none !important;
+}
 /* -------------------- */
 
 .bottomLeft{
@@ -274,7 +290,30 @@ li{list-style-type: none;}
    width: 451px; height: 300px;
    text-align: left;
  }
+ 
+.inputBox{
+ 	margin: 10px;
+ 	text-align: center;
+    margin: 30px 0px;
+ }
+ 
+ .buttonBox{
+ 	margin-top: 58px; background-color:#03C75A;
+ 	height: 50px; width: 447px;	
+ 	border: none; cursor: pointer;
+ }
 
+.sunday{
+	color:red;
+	
+}
+.saturday{
+	color:blue;
+}
+.buttonBox span{
+	font-weight: bold; 
+	font-size: 16px; color: #d3d3d3;
+} 
 .bmTopItem{
    border: 1px #D3D3D3 solid;
    width: 148px; height: 20px;
@@ -309,6 +348,40 @@ li{list-style-type: none;}
    background-color: #D3D3D3
 }
 
+
+.name { width:440px;
+	height: 30px; display: flex; justify-content: space-around;
+	margin-bottom: 10px;
+}
+
+.email{width: 440px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;}
+    
+.phone{width: 440px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;}
+
+.email input{
+	width: 260px;
+}
+.phone input{
+	width: 267px;
+}
+
+
+
+
+
+
+
+.name input{
+	width: 260px;
+}
 /*-------------------------ft----------------  */
 #footer{
    
@@ -356,6 +429,7 @@ li{list-style-type: none;}
 .ftImg{
    background-image: url("../img/naver.gpt.png"); background-repeat: no-repeat;
    width: 48px ; height: 33px; background-size: 52px;
+   
 }
 
 .ftImgs{

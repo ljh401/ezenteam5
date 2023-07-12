@@ -6,7 +6,7 @@ let month = new Date().getMonth()+1;			//현재 월(0~11)+1
 
 
 let contents = [] // 여러개 일정객체를 등록하는 배열
-
+let checkIn =[] 		//예약자 배열
 //1. 현재 연도/월 기준으로 달력 출력해주는 함수
 calPrint();
 function calPrint(){
@@ -34,15 +34,20 @@ function calPrint(){
 			for(let b = 1 ; b<=sWeek ; b++){	//1부터 1일의요일까지 공백 구역 출력
 				html += `<div></div>`
 			}
-	
-			for( let day=1 ; day<=eDay ; day++){
-				html +=`<div onclick="openModal(${day})">
-				${day}
-				${contentPrint ( `${year}-${month}-${day}`)}
-				</div>`
-				//만약에 현재 날짜와 일정목록 등록된 일정의 날짜와 같으면 출력
-				
-			}
+				for (let day = 1; day <= eDay; day++) {			//for start
+			  const clickedDate = new Date(year, month - 1, day);
+			  const dayOfWeek = clickedDate.getDay();
+			  
+			  if (dayOfWeek === 0 ) { // 0=일요일 일요일이 맞을때
+			    html += `<div class="sunday" onclick="openPrint(${day})">${day}${contentPrint(`${year}-${month}-${day}`)}</div>`;
+			  	} 
+			  		else if( dayOfWeek === 6){	//6=토요일 툐요일이 맞을때 
+						  html +=`<div class="saturday" onclick="openPrint(${day})">${day}${contentPrint(`${year}-${month}-${day}`)}</div>`
+					  }
+			  			else {
+			    html += `<div onclick="openPrint(${day})">${day}${contentPrint(`${year}-${month}-${day}`)}</div>`;
+			  			}
+			}					//for end
 			
 		calendar.innerHTML = html;
 }
@@ -56,9 +61,8 @@ function contentPrint(date){
 	//인수로 들어온 날짜와 같은 일정목록에서 일정 찾기
 	for(let i = 0 ; i<contents.length ; i++){
 		if(date==contents[i].date){
-			html+=	`<span class="content" style="background-color:${contents[i].color}">
-			${contents[i].content}
-			</span>`
+			html+=	`${contents[i].content}`
+			contents.push(contents[i])
 			
 		}
 	}
@@ -84,66 +88,58 @@ function onNext(check){
 }
 
 
+function openPrint(day){
 
 
-
-function openModal(day){
-
-	console.log(openModal)
 	//* 현재 클릭한 일수의 날짜 출력
 	document.querySelector('.topItems').innerHTML= `${month}.${day}`
+	 // * 현재 클릭한 일수의 날짜와 요일 출력
+    const clickedDate = new Date(year, month - 1, day);
+    const dayOfWeek = clickedDate.getDay();
+    
+    //값 저장
+     let weekPay = '';
+     //월~목요일 금액과 금~일 금액 변경하기
+  if (dayOfWeek >= 1 && dayOfWeek <= 4) {
+    weekPay = '22,000';
+  
+  } else if (dayOfWeek === 5|| dayOfWeek ===6 || dayOfWeek ===0) {
+   weekPay= '25,000';
+  } 
+  
+    const monthString = month < 10 ? `0${month}` : month;
+    const dayString = day < 10 ? `0${day}` : day;
 
+    document.querySelector('.topItems').innerHTML = `${monthString}.${dayString} (${getWeekName(dayOfWeek)}) ${weekPay}원 `;
+    document.querySelector('.inputText').innerHTML = `${monthString}.${dayString} (${getWeekName(dayOfWeek)}) ${weekPay}원 `;
+	let pay={pay:weekPay};
+	checkIn.push(pay)
+	
+	
 }
 
-
-
-
-
-
-//5. 일정 등록 버튼 클릭했을때
-function onWrite(){
-	//1. 입력받은 값 호출
-	
-	let contentInput=document.querySelector('.contentInput').value;
-	let date=document.querySelector('.date').innerHTML;
-	
-	
-	//2.가공 [1.유효성검사, 2.객체화]
-	let object = {content : contentInput,
-		date: date}
-
-
-
-	
-	//3.저장
-	contents.push(object);
-	
-	
-	//4. 비워주기
-	color.value='' ; contentInput.value='';
-	//5.모달닫기
-	closeModal();
-	//새로고침
-	 calPrint();
-}
+//날짜 출력
 
 function getWeekName(dayOfWeek) {
     const weekNames = ['일', '월', '화', '수', '목', '금', '토'];
     return weekNames[dayOfWeek];
 }
 
-function openModal(day) {
-    // * 현재 클릭한 일수의 날짜와 요일 출력
-    const clickedDate = new Date(year, month - 1, day);
-    const dayOfWeek = clickedDate.getDay();
-    const monthString = month < 10 ? `0${month}` : month;
-    const dayString = day < 10 ? `0${day}` : day;
+//예약 버튼 클릭시 값 배열에 넣기
 
-    document.querySelector('.topItems').innerHTML = `${monthString}.${dayString} (${getWeekName(dayOfWeek)})`;
-    
+
+function check(){
+	alert('예약이 완료되었습니다.')
+	let name=document.querySelector('.names').value
+	let email=document.querySelector('.emails').value
+	let phone=document.querySelector('.phones').value
+
+	let profile={name:name,  email:email,phone:phone , }
+	checkIn.push(profile);
+	console.log(checkIn);
+	document.querySelector('.topItems').innerHTML ='';
+	document.querySelector('.inputText').innerHTML ='';
 }
-
-
 
 
 

@@ -88,7 +88,7 @@
 							<div>불가</div>
 						</div>
 						</div>
-						
+						<div class="checkIn">예약자 정보 </div>
 					</div>
 				</div>
 				<div class="contentBm">
@@ -105,18 +105,16 @@
 					</ul>
 
 					<div class="bottomRight">
-						<div>예약자<input type="text" placeholder="asd"/></div>
-						<div>이메일<input type="text" placeholder="wdwdwd@naver.com"/></div>
-						<div>전화번호<input type="text" placeholder="010-5245-5665" /></div>
+						<div class="name"><span>예약자</span><input class="names" type="text" placeholder="asd"/></div>
+						<div class="email"><span>이메일</span><input  class="emails"  type="text" placeholder="wdwdwd@naver.com"/></div>
+						<div class="phone"><span>전화번호</span> <input  class="phones"   type="text" placeholder="010-5245-5665" /></div>
+						<div class="inputBox">
 						<h3>회차선택</h3>
 						<div class="inputText"></div>
-						<ul>
-							<li>21:30</li>
-							<li>10매</li>
-						</ul>
-						<button>
-							<span>결제</span>
+						<button  onclick="check()"    class="buttonBox">
+							<span>예약하기</span>
 						</button>
+						</div>
 					</div>
 				</div>
 				<div class="background">
@@ -131,7 +129,7 @@
 			<div id="formBottom">
 				<!--하단 본문 시작  -->
 				<div class="bmTop">
-					<div class="bmTopItem">상세정보</div>
+					<div  class="bmTopItem">상세정보</div>
 					<div class="bmTopItem">오시는길</div>
 				</div>
 				<div class="bmBm">
