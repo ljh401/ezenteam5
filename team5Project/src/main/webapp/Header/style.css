@@ -8,6 +8,7 @@ input:focus + label {
   color: red;
 }
 
+
 /* 서브 비주얼 */
 #sub_visual { overflow:hidden; position: relative; padding:43px 0;}
 #sub_visual .txtwrap { position: relative; z-index:10; margin:0 auto; width:670px; animation:slideInUp 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) 0.2s both;}
@@ -480,7 +481,8 @@ input:focus + label {
 	#sub_visual .txtwrap { width:545px;}
 	#sub_visual .txtwrap h2 > p { font-size:14px;}
 	#sub_visual .txtwrap h2 > div > strong { font-size:42px; line-height:52px;}
-	#sub_visual .txtwrap h2 > div > span { padding: font-size:18px; line-height:23px;}
+	#sub_visual .txtwrap h2 > div > span {  font-size:18px; line-height:23px;}
+
 
 	#sub_contents { width:auto;}
 
@@ -720,4 +722,5 @@ input:focus + label {
 	.group .inq_box p { padding-left:0; background:none;}
 	#skipcon a.btn, #skipcon .btn { font-size:14px; }
 	#skipcon a.btn_b02, #skipcon .btn_b02 { padding:0 20px; }
+}
 }

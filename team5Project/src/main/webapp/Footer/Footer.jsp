@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <head>
 	<link href="../Header/layout.css" rel="stylesheet">
-	<link href="../Header/default.css" rel="stylesheet">"
+	<link href="../Header/default.css" rel="stylesheet">
 	
 </head>
  	<!-- FOOTER -->
