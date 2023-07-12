@@ -109,9 +109,6 @@
 	<!-- Footer 삽입 -->
 						<%@include file="../Footer/Footer.jsp"%>
 
-<!-- Footer 삽입 -->
-						<%@include file="../Footer/Footer.jsp"%>
-
 	<!-- 부트스트랩에서 만든 JS 적용 -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
