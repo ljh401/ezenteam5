@@ -14,12 +14,9 @@
 <body>
 
 	
-<%@include file="../Header/Header.jsp" %> 헤더 링크 
-<%@include file="../Header_bar/Header_bar.jsp" %> 헤더 바 링크
+<%@include file="../Header/Header.jsp" %>
+<%@include file="../Header_bar/Header_bar.jsp" %>
 
-
-<div>헤더 영역</div>
-<div>헤더바</div>
 	 
 	<form>
 	 <div class="wrap"><!-- 전체페이지 시작 -->
@@ -73,18 +70,18 @@
 	 		<div class="main_content_3">
 	 			
 	 			<div><span class="typeText">참가구분</span><span>
-	 				<span class="checkButton1"><input type="radio" name="student" value="kind"> 유치원</span>
-	 				<span class="checkButton1"><input type="radio" name="student" value="elem"> 초등학생</span>
-	 				<span class="checkButton1"><input type="radio" name="student" value="mihi"> 중/고등학생</span>
-	 				<span class="checkButton1"><input type="radio" name="student" value="ohter"> 학교외 단체</span>
+	 				<span class="checkButton1"><input type="radio" name="student" value="유치원"> 유치원</span>
+	 				<span class="checkButton1"><input type="radio" name="student" value="초등학생"> 초등학생</span>
+	 				<span class="checkButton1"><input type="radio" name="student" value="중/고등학생"> 중/고등학생</span>
+	 				<span class="checkButton1"><input type="radio" name="student" value="학교외 단체"> 학교외 단체</span>
 	 			</span></div>
 	 			
 	 			
 	 			<div><span class="typeText">프로그램 선택</span><span>
-	 				<span class="checkButton1"><input type="radio" name="slot" value="after"> 낮</span>
-	 				<span class="checkButton1"><input type="radio" name="slot" value="night"> 밤</span>
-	 				<span class="checkButton1"><input type="radio" name="slot" value="daily"> 종일</span>
-	 				<span class="checkButton1"><input type="radio" name="slot" value="2day"> 1박2일</span>
+	 				<span class="checkButton1"><input type="radio" name="slot" value="낮"> 낮</span>
+	 				<span class="checkButton1"><input type="radio" name="slot" value="밤"> 밤</span>
+	 				<span class="checkButton1"><input type="radio" name="slot" value="종일"> 종일</span>
+	 				<span class="checkButton1"><input type="radio" name="slot" value="1박2일"> 1박2일</span>
 	 			</span></div>
 	 			
 	 		
@@ -105,16 +102,16 @@
 	 			</span></div>
 	 			
 	 			<div><span class="typeText">비밀번호 *</span><span>
-	 				<input class="pass" id="inputBox2" type="password"></span>
+	 				<input class="pass" id="inputBox2" type="password" maxlength="4"></span>
 	 				<div id="m_div4"><span class="typeText2"></span>
 	 					<span>* 참가신청확인시 사용할 비밀번호 4자리를 입력해주세요.</span>
 		 			</div>
 	 			</div>
 	 			
 	 			<div><span class="typeText">연락처 *</span><span>
-	 				<input class="tel1" id="inputBox2" type="text"> - 
-	 				<input class="tel2" id="inputBox2" type="text"> - 
-	 				<input class="tel3" id="inputBox2" type="text"></span>
+	 				<input class="tel1" id="inputBox2" type="text" maxlength="3"> - 
+	 				<input class="tel2" id="inputBox2" type="text" maxlength="4"> - 
+	 				<input class="tel3" id="inputBox2" type="text" maxlength="4"></span>
 	 				<div id="m_div4"><span class="typeText2"></span>
 	 					<span>* 프로그램 관련 실무담당자 연락처를 정확하게 기입해 주세요.</span>
 		 			</div>
@@ -125,7 +122,8 @@
 	 			</span></div>
 	 			
 	 			<div class="m_div2"><span class="typeText">단체유형 *</span><span>
-	 				<input class="category" id="inputBox3" type="text">
+	 				<input class="category" id="inputBox3" type="text"
+	 				placeholder="ex) 학교, 학원, 어린이집, 지역아동센터 등">
 	 			</span></div>
 	 			
 	 			<div class="m_div2"><span class="typeText">이메일 *</span><span>
@@ -156,8 +154,8 @@
 	</div> <!-- 전체페이지 종료 -->
 	</form> 
 		
- <%@include file="../Footer/Footer.jsp" %> 푸터링크
-<div>푸터 영역</div>
+ <%@include file="../Footer/Footer.jsp" %>
+
 	
 	<!-- 제이쿼리 입력폼 스크립트 호출 -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
