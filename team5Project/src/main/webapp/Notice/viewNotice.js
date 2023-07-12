@@ -23,9 +23,11 @@ function onView(){
 			// 만약에 i번째 게시물번호와 클릭된 게시물 번호와 같으면
 			console.log( b );
 			// 3. 대입
-			title.innerHTML= b.title
-			writerdate.innerHTML = ` 작성자 : ${ b.writer } 작성일 : ${ b.date } ` ;
-			content.innerHTML = b.content
+			title.innerHTML= `[${b.title}]`
+			writerdate.innerHTML = `<div class="sv_member">${ b.writer }</div> <div>${ b.date }</div> ` ;
+			content.innerHTML = `<div style="font-family:'나눔고딕'!important, NanumGothic!important;
+    font-size: 12pt!important;">[${b.title}]</div> <br/> <div style="font-family: '나눔고딕', NanumGothic;
+    font-size: 12pt;">${b.content}</div>`
 			break;	// 가장 반복문 종료
 		}
 	} // END
