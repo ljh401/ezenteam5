@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>중미산 천문대</title>
 
 <!-- 뷰포트 : 반응형 동작 코드  -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,6 +25,7 @@
 <link href="../Header/style.css" rel="stylesheet">
 <link href="../Header/default.css" rel="stylesheet">
 <link href="Notice.css" rel="stylesheet">
+<link href="viewNotice.css" rel="stylesheet"> 
 
 </head>
 <body>
@@ -68,18 +69,18 @@
 							<h3>공지사항</h3>
 
 							<div class="breadcrumb">
-								<img src="/img/ico/ico_home.png" alt=""><strong>HOME
+								<img style="width : 17px; height : 14px" src="../img/ico_home.png" alt=""><strong>HOME
 									<span>&gt;</span> 공지사항
 								</strong>
 							</div>
 						</div>
 
-						<div class="container" style="border: 1px solid gray">
+						<div class="container">
 							<!-- 부트스트랩 적용 -->
-							<h5 class="title text-center mt-5 mb-2" style="border: 1px solid gray">게시물 제목 출력 구역</h5>
-							<p class="writerdate text-center" style="border: 1px solid gray">작성자와 작성일 출력되는 구역</p>
+							<h5 class="title">게시물 제목 출력 구역</h5>
+							<p class="writerdate">작성자와 작성일 출력되는 구역</p>
 							<div class="row justify-content-md-center">
-								<div class="content" style="width : 100%; min-height: 500px; margin-top: 10px; padding-left:15px;">게시물
+								<div class="content" style="min-height: 200px; height: auto !important;">게시물
 									내용이 출력되는 구역</div>
 							</div>
 						</div>
@@ -90,7 +91,7 @@
 									type="button" value="삭제하기">
 							</div>
 							<div class="col-1" style="margin-left : 650px; height: 40px;">
-								<a href="Notice.jsp"><input class="form-control "
+								<a href="Notice.jsp"><input class="form-control"
 									type="button" value="목록보기"></a>
 							</div>
 						</div>
@@ -105,6 +106,8 @@
 		<!-- sub end -->
 	</div>
 	<!--Wrap end -->
+	<!-- Footer 삽입 -->
+						<%@include file="../Footer/Footer.jsp"%>
 
 <!-- Footer 삽입 -->
 						<%@include file="../Footer/Footer.jsp"%>

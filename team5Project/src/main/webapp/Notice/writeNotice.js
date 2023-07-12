@@ -73,7 +73,7 @@ function onWrite(){
 			title : title ,			// 입력받은 값 넣기 
 			content : content ,		// 입력받은 값 넣기 
 			no : no ,				// 게시물 번호 [ 마지막게시물 +1 ]
-			date : `${new Date().getFullYear()}-${new Date().getMonth()+1 }-${new Date().getDate() }` , // 게시물 작성일 [ 연도 , 월+1 , 일 ]
+			date : `${new Date().getFullYear()}-${new Date().getMonth()+1 }-${new Date().getDate() }-${new Date().getHours() }:${new Date().getMinutes() }` , // 게시물 작성일 [ 연도 , 월+1 , 일 ]
 			view : 0 ,				// 게시물 조회수 기본값이 0 부터 시작 
 			like : 0 , 				// 게시물 추천수는 기본값이 0 부터 시작 
 			writer : loginId // 게시물 작성자 [ 로그인된 아이디 ]

@@ -9,7 +9,10 @@
 </head>
 <body>
 
-   <%@include file="../Header/Header.jsp" %>
+
+	<%@include file="../Header/Header.jsp" %>
+	
+
 
    <div class="main">
       <div class="mainImg">
