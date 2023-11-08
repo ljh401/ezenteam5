@@ -19,7 +19,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=xadtduthyv&callback=initMap"></script>
+
 <%@include file="../Header/Header.jsp" %> 
 <%@include file="../Header_bar/Header_bar.jsp" %>
 <div id = "wrap">
@@ -60,24 +60,53 @@
                <p>HOME > 찾아오시는길</p>
             </div>
          </div>
-         <div id="map" style="width: 880px; height: 400px;">
-           <script type="text/javascript">
-               function initMap() {
-                   var mapOptions = {
-                       center: new naver.maps.LatLng(37.5818, 127.4594), // 중미산천문대의 좌표
-                       zoom: 16
-                   };
-   
-                   var map = new naver.maps.Map('map', mapOptions);
-   
-                   var markerOptions = {
-                       position: new naver.maps.LatLng(37.5818, 127.4594), // 중미산천문대의 좌표
-                       map: map
-                   };
-   
-                   var marker = new naver.maps.Marker(markerOptions);
-               }
-           </script>
+        
+        
+       	<div class = "directions"> <!-- 지도 api -->
+       		<div id="map" style="width: 880px; height: 400px;">
+       		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=59b47c7057625f350189b1cb8369a874&libraries=services"></script>
+					<script>
+					var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+					    mapOption = {
+					        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+					        level: 4 // 지도의 확대 레벨
+					    };  
+					
+					// 지도를 생성합니다    
+					var map = new kakao.maps.Map(mapContainer, mapOption); 
+					
+					// 주소-좌표 변환 객체를 생성합니다
+					var geocoder = new kakao.maps.services.Geocoder();
+					
+					// 주소로 좌표를 검색합니다
+					geocoder.addressSearch('경기도 양평군 옥천면 중미산로 1268', function(result, status) {
+					
+					    // 정상적으로 검색이 완료됐으면 
+					     if (status === kakao.maps.services.Status.OK) {
+					
+					        var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+					
+					        // 결과값으로 받은 위치를 마커로 표시합니다
+					        var marker = new kakao.maps.Marker({
+					            map: map,
+					            position: coords
+					        });
+					
+					        // 인포윈도우로 장소에 대한 설명을 표시합니다
+					        var infowindow = new kakao.maps.InfoWindow({
+					            content: '<div style="width:150px;text-align:center;padding:6px 0;">중미산 천문대</div>'
+					        });
+					        infowindow.open(map, marker);
+					
+					        // 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+					        map.setCenter(coords);
+					    } 
+					});    
+					</script>
+
+				</div>
+             
+        
         </div>
         <div class = "area">
               <div>
@@ -148,6 +177,8 @@
       </div>
 </div>
 <%@include file="../Footer/Footer.jsp" %>
+
 <script src = "Location.js" type="text/javascript"></script>
+
 </body>
 </html>
